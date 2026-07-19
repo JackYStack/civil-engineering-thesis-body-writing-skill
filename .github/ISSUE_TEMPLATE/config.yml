@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Usage recipes
+    url: https://github.com/JackYStack/civil-engineering-thesis-body-writing-skill/blob/main/references/examples/public-usage-recipes.md
+    about: Check copy-ready public prompts before opening a workflow request.

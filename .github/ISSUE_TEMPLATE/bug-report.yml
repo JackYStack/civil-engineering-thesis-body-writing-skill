@@ -1,0 +1,64 @@
+name: Bug report
+description: Report a reproducible skill, installer, validator, or documentation problem.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public repository. Issue Form required settings provide a structured confirmation only; issue content may be visible to anyone, and the form cannot prevent disclosure of sensitive information. Do not submit manuscripts, private paths, credentials, Zotero storage keys, or unpublished data.
+        本仓库为公开仓库。Issue Form 的 required 设置仅用于结构化确认；Issue 内容可能被任何人查看，表单本身不能阻止敏感信息披露。请勿提交稿件、私人路径、凭据、Zotero storage key 或未公开数据。
+  - type: dropdown
+    id: task_mode
+    attributes:
+      label: Task mode
+      options:
+        - Thesis body writing
+        - Paper or SCI writing
+        - Citation support
+        - DOCX revision
+        - Target-journal polishing
+        - InstSci or Zotero workflow
+        - Installation or validation
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Codex version if known, and installation method.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the exact prompt or command, a minimal public-safe input description, and ordered steps to reproduce the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation output
+      description: Paste only the relevant public-safe error lines.
+      render: shell
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I understand this is a structured confirmation only, and I removed manuscript text, private paths, credentials, Zotero storage keys, access tokens, and unpublished research data.
+          required: true

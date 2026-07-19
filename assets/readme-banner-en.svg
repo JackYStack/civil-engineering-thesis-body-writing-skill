@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="460" viewBox="0 0 1600 460" role="img" aria-labelledby="title desc">
+  <title id="title">Civil Engineering Academic Writing Skill</title>
+  <desc id="desc">Evidence-bounded thesis, SCI, citation, and DOCX workflows</desc>
+  <rect width="1600" height="460" fill="#ffffff"/>
+  <rect x="0" y="0" width="18" height="460" fill="#f4c542"/>
+  <path d="M1160 88h286v232h-286zM1192 120h222v168h-222zM1218 320v52m170-52v52M1132 372h342" fill="none" stroke="#0f4c81" stroke-width="8"/>
+  <path d="M1178 144h250M1178 200h250M1178 256h250" fill="none" stroke="#9aa7b2" stroke-width="4"/>
+  <circle cx="1178" cy="144" r="9" fill="#f4c542"/>
+  <circle cx="1428" cy="256" r="9" fill="#f4c542"/>
+  <text x="100" y="142" fill="#0f4c81" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="700">Civil Engineering Academic Writing Skill</text>
+  <text x="104" y="202" fill="#303942" font-family="Inter, Arial, sans-serif" font-size="29">Evidence-bounded thesis, SCI, citation, and DOCX workflows</text>
+  <line x1="104" y1="238" x2="1040" y2="238" stroke="#d5dce2" stroke-width="3"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="23" font-weight="600" text-anchor="middle">
+    <rect x="104" y="282" width="142" height="54" rx="6" fill="#e8f1f8"/><text x="175" y="317" fill="#0f4c81">Thesis</text>
+    <rect x="264" y="282" width="112" height="54" rx="6" fill="#e8f1f8"/><text x="320" y="317" fill="#0f4c81">SCI</text>
+    <rect x="394" y="282" width="154" height="54" rx="6" fill="#e8f1f8"/><text x="471" y="317" fill="#0f4c81">Citation</text>
+    <rect x="566" y="282" width="142" height="54" rx="6" fill="#e8f1f8"/><text x="637" y="317" fill="#0f4c81">DOCX</text>
+    <rect x="726" y="282" width="142" height="54" rx="6" fill="#fff4c7"/><text x="797" y="317" fill="#594500">Zotero</text>
+  </g>
+  <text x="104" y="392" fill="#66727d" font-family="Inter, Arial, sans-serif" font-size="22">OBJECT · EVIDENCE · MECHANISM · BOUNDARY</text>
+</svg>

@@ -1,0 +1,7 @@
+interface:
+  display_name: "土木论文写作"
+  short_description: "Draft, revise, cite, format, and coordinate publication figures for evidence-bounded civil-engineering manuscripts."
+  default_prompt: "Use $civil-thesis-body-writing to revise my civil-engineering manuscript or coordinate a publication figure with evidence-bounded claims and local-first support."
+
+policy:
+  allow_implicit_invocation: true
