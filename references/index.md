@@ -52,6 +52,7 @@ Use this index to find the right reference file. The structure follows the natur
 | [style/style-and-qc.md](style/style-and-qc.md) | Compatibility entry for the split style/QC guides; start here when old instructions point to the former merged guide. |
 | [style/qc/index.md](style/qc/index.md) | Split QC map for failure-mode diagnosis, claim-evidence-boundary checks, and final polish. |
 | [style/scientific-figure-color.md](style/scientific-figure-color.md) | Selecting or auditing thesis/journal figure palettes with verified Nature-derived examples, semantic colour roles, accessibility, grayscale, print, and journal-precedence checks. |
+| [style/hfut-thesis-word-objects.md](style/hfut-thesis-word-objects.md) | Creating or auditing the author-confirmed HFUT Word structure for bilingual figure captions, bilingual table captions, three-line tables, and numbered OMML equations. |
 
 ## Examples
 

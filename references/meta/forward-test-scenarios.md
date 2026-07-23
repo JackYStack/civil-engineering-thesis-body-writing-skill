@@ -147,3 +147,21 @@ Must do: Render as required, visually inspect every page occupied by the changed
 Must not: Create full-document contact sheets, inspect all pages, or claim a full-document visual audit for a local single-section edit.
 
 Validation prompt: "只改Word中的3.3.3小节。生成新版本并检查该小节所在页，不要检查全文所有页面。"
+
+## Scenario: HFUT Bilingual Figure, Table, And Equation Objects
+
+Mode: `docx-revision`
+
+Trigger: The user asks to create or revise figures, tables, and numbered equations in the author-confirmed HFUT thesis Word format and names the local reference as the structural authority.
+
+Expected axes: section is the edited thesis section; source is `local-style-corpus` plus `user-materials`; operation is `docx-edit`.
+
+Expected references: `style/hfut-thesis-word-objects.md`, `workflows/docx-creation-and-formatting.md` for new objects, and `workflows/docx-ooxml-editing.md` for existing objects.
+
+Expected output contract: updated DOCX path or an executable object contract, authority statement, OOXML validation results, and changed-section rendered-page results.
+
+Must do: Use the 2-row × 1-column figure wrapper with both caption paragraphs in row 2; use external `表/Tab` captions plus a native three-line table; use a same-paragraph OMML Equation Array and Chinese callout `式（2.1）`.
+
+Must not: Generalize the project convention to every HFUT template; create a third figure-caption row; wrap table captions around the data table; use `Table` or a 0.75 pt header rule; number equations with a three-column table or manual spacing.
+
+Validation prompt: "按照已确认的合肥工业大学参考Word真实结构，建立图3.1、表3.1和式（3.1），并检查对象结构与该小节渲染页。"

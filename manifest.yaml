@@ -62,6 +62,7 @@ references:
   docx_ooxml_editing: references/workflows/docx-ooxml-editing.md
   thesis_format_audit: references/workflows/thesis-format-audit.md
   scientific_figure_color: references/style/scientific-figure-color.md
+  hfut_thesis_word_objects: references/style/hfut-thesis-word-objects.md
   nature_figure_cooperation: references/workflows/nature-figure-cooperation.md
   on_demand_root: references/
 

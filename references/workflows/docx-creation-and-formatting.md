@@ -4,6 +4,8 @@ Use this workflow when the user asks to create a new Word manuscript, convert Ma
 
 This guide distills reusable workflow ideas from the external sources recorded in [external-skill-sources.md](../meta/external-skill-sources.md). It does not copy external scripts or establish a universal university format.
 
+For the author-confirmed HFUT thesis Word project, load [hfut-thesis-word-objects.md](../style/hfut-thesis-word-objects.md) and use its observed figure, table, bilingual-caption, and numbered-equation structures. Do not replace those calibrated objects with generic academic defaults.
+
 ## Branch First: create / convert / revise
 
 Classify the task before selecting tools:
@@ -138,4 +140,3 @@ Report:
 - representation used for equations, captions, numbering, citations, and tables;
 - validation levels completed and any tool unavailable;
 - unrefreshed fields, tracked-change status, and remaining compatibility or compliance risks.
-

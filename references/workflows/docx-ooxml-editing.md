@@ -2,6 +2,8 @@
 
 Use this reference when the task requires modifying an existing `.docx` thesis, paper, bilingual manuscript, or Word revision file. The goal is to preserve Word compatibility while making targeted academic text edits.
 
+For the author-confirmed HFUT thesis Word project, load [hfut-thesis-word-objects.md](../style/hfut-thesis-word-objects.md) before changing figures, tables, bilingual captions, or numbered equations. Its verified container structure overrides the generic fallback layouts in this guide.
+
 ## Default Policy
 
 - Always create a new revision file. Do not overwrite the original `.docx`.

@@ -24,6 +24,7 @@ At minimum, review the following ordinary workflows after major changes:
 7. Target-journal full-manuscript polishing blueprint.
 8. Thesis subsection revision that removes chapter-role meta-discourse from the body.
 9. Single-section DOCX revision with visual QA limited to the changed section pages.
+10. Author-confirmed HFUT figure/table/equation objects preserve the calibrated OOXML container structure and bilingual labels.
 
 Use [forward-test-scenarios.md](forward-test-scenarios.md) for reusable fresh-context prompts. Use [public-usage-recipes.md](../examples/public-usage-recipes.md) for human-facing prompt templates. Record public-safe outcomes in [real-task-regression-results.md](real-task-regression-results.md).
 

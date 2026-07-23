@@ -73,6 +73,7 @@ REQUIRED_REFERENCES = [
     "references/workflows/docx-ooxml-editing.md",
     "references/workflows/thesis-format-audit.md",
     "references/style/scientific-figure-color.md",
+    "references/style/hfut-thesis-word-objects.md",
     "references/workflows/nature-figure-cooperation.md",
 ]
 

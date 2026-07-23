@@ -19,6 +19,7 @@ REQUIRED_FILES = [
     "references/workflows/thesis-format-audit.md",
     "references/style/local-thesis-style.md",
     "references/style/scientific-figure-color.md",
+    "references/style/hfut-thesis-word-objects.md",
     "references/workflows/nature-figure-cooperation.md",
 ]
 
@@ -40,6 +41,7 @@ SKILL_REQUIRED_LINKS = [
     "references/workflows/docx-creation-and-formatting.md",
     "references/workflows/thesis-format-audit.md",
     "references/style/scientific-figure-color.md",
+    "references/style/hfut-thesis-word-objects.md",
     "references/workflows/nature-figure-cooperation.md",
 ]
 
@@ -50,6 +52,7 @@ INDEX_REQUIRED_LINKS = [
     "workflows/docx-creation-and-formatting.md",
     "workflows/thesis-format-audit.md",
     "style/scientific-figure-color.md",
+    "style/hfut-thesis-word-objects.md",
     "workflows/nature-figure-cooperation.md",
 ]
 
@@ -109,6 +112,22 @@ DOCX_OOXML_REQUIRED_TERMS = [
     "full-document visual review",
 ]
 
+HFUT_WORD_OBJECT_REQUIRED_TERMS = [
+    "Formatting-authority boundary",
+    "Figure container contract",
+    "Table container contract",
+    "Bilingual caption contract",
+    "Equation contract",
+    "2-row × 1-column",
+    "Table Grid",
+    "all borders explicitly set to `none`",
+    "top and bottom borders use `w:sz=\"12\"`",
+    "header bottom border uses `w:sz=\"4\"`",
+    "Equation Array",
+    "式（2.1）",
+    "Structure validation",
+]
+
 
 def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
@@ -151,6 +170,7 @@ def main() -> int:
     thesis_format_audit = read_text(root / "references/workflows/thesis-format-audit.md")
     local_thesis_style = read_text(root / "references/style/local-thesis-style.md")
     scientific_figure_color = read_text(root / "references/style/scientific-figure-color.md")
+    hfut_word_objects = read_text(root / "references/style/hfut-thesis-word-objects.md")
     nature_figure_cooperation = read_text(root / "references/workflows/nature-figure-cooperation.md")
 
     for link in SKILL_REQUIRED_LINKS:
@@ -195,6 +215,19 @@ def main() -> int:
         if term not in docx_ooxml:
             errors.append(f"docx OOXML workflow missing local visual-review rule: {term}")
 
+    for term in HFUT_WORD_OBJECT_REQUIRED_TERMS:
+        if term not in hfut_word_objects:
+            errors.append(f"HFUT Word object guide missing required term: {term}")
+
+    for rel, text in [
+        ("manifest.yaml", read_text(root / "manifest.yaml")),
+        ("references/workflows/docx-creation-and-formatting.md", docx_workflow),
+        ("references/workflows/docx-ooxml-editing.md", docx_ooxml),
+        ("references/workflows/thesis-format-audit.md", thesis_format_audit),
+    ]:
+        if "references/style/hfut-thesis-word-objects.md" not in text and "../style/hfut-thesis-word-objects.md" not in text:
+            errors.append(f"{rel} does not route to the HFUT Word object guide")
+
     for rel in [
         "SKILL.md",
         "references/index.md",
@@ -206,6 +239,7 @@ def main() -> int:
         "references/workflows/thesis-format-audit.md",
         "references/style/local-thesis-style.md",
         "references/style/scientific-figure-color.md",
+        "references/style/hfut-thesis-word-objects.md",
         "references/workflows/nature-figure-cooperation.md",
     ]:
         errors.extend(check_markdown_links(root, rel))

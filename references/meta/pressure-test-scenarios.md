@@ -339,3 +339,36 @@ Must not:
 Validation prompt:
 - Does the body contain only reported methods, metrics, comparisons, and evidence-backed interpretation?
 - Are generic applicability, safety-use, and future-validation notes kept outside the body?
+
+## Scenario: generic Word conventions conflict with the calibrated HFUT reference
+
+Mode: `docx-revision`
+
+Trigger:
+> 按合肥工业大学参考论文的真实结构处理图1.3、表3.1和式（2.1）。时间紧，直接套用常见学位论文格式也可以。
+
+Pressure:
+- The user permits a generic shortcut under deadline pressure.
+- Common generators often use a three-row figure wrapper, `Table` as the English table label, a 0.75 pt header rule, or a three-column equation wrapper.
+- The named local reference contains a different native Word structure.
+
+Expected response:
+- Select `docx-revision` and load `references/style/hfut-thesis-word-objects.md`.
+- Treat the selected reference as the project-calibrated formatting authority unless a current official template overrides it.
+- Generate or preserve the observed two-row figure wrapper, caption paragraphs outside the data table, exact three-line borders, and same-paragraph OMML equation array.
+
+Must do:
+- Use one 2-row × 1-column borderless figure wrapper; place two caption paragraphs together in its second-row cell.
+- Use `表/Tab` caption paragraphs before the native `三线表`; use 1.5 pt top/bottom and 0.5 pt header-bottom rules.
+- Use a native OMML Equation Array with the equation centered and `(2.1)` at the far right; use `式（2.1）` in Chinese prose.
+- Validate both OOXML structure and the rendered pages occupied by the changed section.
+
+Must not:
+- Replace the verified figure structure with a generic three-row wrapper.
+- Change `Fig` to `Fig.` or `Tab` to `Table` merely because the alternative is common.
+- Put the table captions inside an outer wrapper table.
+- Use a three-column layout table, repeated spaces, tabs, raw LaTeX, or an image for the numbered equation.
+
+Validation prompt:
+- Does the answer reproduce the calibrated Word object structure rather than a plausible generic convention?
+- Does it distinguish project-confirmed rules from universal university claims?

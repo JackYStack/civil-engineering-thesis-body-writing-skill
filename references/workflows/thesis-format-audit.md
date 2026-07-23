@@ -4,6 +4,8 @@ Use this workflow for deterministic or evidence-based review of thesis formattin
 
 For command-level integration with an installed thesis-skills checkout, also load [thesis-skills-audit-workflow.md](thesis-skills-audit-workflow.md). For Word generation or editing, use [docx-creation-and-formatting.md](docx-creation-and-formatting.md) and [docx-ooxml-editing.md](docx-ooxml-editing.md).
 
+When auditing the author-confirmed HFUT thesis Word project, load [hfut-thesis-word-objects.md](../style/hfut-thesis-word-objects.md) as the calibrated object-level ruleset for figures, tables, bilingual captions, and numbered OMML equations.
+
 ## Select the artifact path
 
 | Source artifact | Primary audit path | What can be asserted | Main limitation |
@@ -155,4 +157,3 @@ Return or save:
 6. `终稿交付清单`: revised artifact, structured reports, reading dashboards, waivers, and next actions.
 
 Do not report a manuscript as submission-ready solely because a checker exits successfully. Submission readiness requires the controlling rules, expected evidence, and manual visual checks appropriate to the artifact.
-
