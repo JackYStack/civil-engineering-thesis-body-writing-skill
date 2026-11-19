@@ -7,6 +7,7 @@ Use this index to find the right reference file. The structure follows the natur
 | File | Use When |
 |---|---|
 | [architecture/motivation-thread-writing.md](architecture/motivation-thread-writing.md) | Establishing the section or manuscript spine before major writing. |
+| [architecture/evidence-led-narrative-and-defensive-writing.md](architecture/evidence-led-narrative-and-defensive-writing.md) | Organizing the strongest supported contribution and removing rhetorical self-defense without hiding material contrary evidence or technical conditions. |
 | [architecture/phenomenon-mechanism-condition-framework.md](architecture/phenomenon-mechanism-condition-framework.md) | Deepening introductions, literature reviews, methods, and results with a phenomenon-mechanism-condition logic rather than a flat gap list or data report. |
 | [architecture/evidence-bank-and-claim-register.md](architecture/evidence-bank-and-claim-register.md) | Drafting from Word files, figures, tables, experiments, FE outputs, ML metrics, or mixed materials. |
 | [architecture/writing-rationale-matrix.md](architecture/writing-rationale-matrix.md) | Planning formal section, manuscript, thesis-to-paper, or Word-level rewrites. |
@@ -25,6 +26,7 @@ Use this index to find the right reference file. The structure follows the natur
 
 | File | Use When |
 |---|---|
+| [workflows/reviewer-driven-revision.md](workflows/reviewer-driven-revision.md) | Revising body text against reviewer comments, preserving author style, and mapping actual edits to reply evidence. |
 | [workflows/citation-workflow.md](workflows/citation-workflow.md) | Compatibility entry for the split local-first citation workflow; start here when old instructions point to the former merged guide. |
 | [workflows/citation/index.md](workflows/citation/index.md) | Split citation workflow map for local-first search, support grading, output tables, and PCSP-specific citation directions. |
 | [workflows/external-source-and-tool-use.md](workflows/external-source-and-tool-use.md) | Source/tool discipline for Zotero, literature-search skills, web search, APIs, publisher pages, standards, and target-journal exemplars. |
@@ -49,6 +51,7 @@ Use this index to find the right reference file. The structure follows the natur
 | [style/local-paper-style.md](style/local-paper-style.md) | Compatibility entry for the split local civil-engineering paper/SCI style guides. |
 | [style/paper-style/index.md](style/paper-style/index.md) | Split local paper/SCI style map for abstract/introduction, results/discussion, conclusion/title, and phrase guardrails. |
 | [style/anti-vague-language.md](style/anti-vague-language.md) | Removing vague academic wording and enforcing object-indicator-evidence-boundary sentences. |
+| [style/academic-prose-cleanup.md](style/academic-prose-cleanup.md) | Selecting cleanup/polish/draft intensity, removing formulaic prose, preserving academic register and invariants, and distinguishing language cleanup from anti-defensive narrative. |
 | [style/style-and-qc.md](style/style-and-qc.md) | Compatibility entry for the split style/QC guides; start here when old instructions point to the former merged guide. |
 | [style/qc/index.md](style/qc/index.md) | Split QC map for failure-mode diagnosis, claim-evidence-boundary checks, and final polish. |
 | [style/scientific-figure-color.md](style/scientific-figure-color.md) | Selecting or auditing thesis/journal figure palettes with verified Nature-derived examples, semantic colour roles, accessibility, grayscale, print, and journal-precedence checks. |

@@ -234,9 +234,4 @@ Opening paragraph:
 
 Numbered conclusions should follow thesis chapters, not random result order.
 
-Research outlook should be honest and bounded:
-
-- limitations from parameter range;
-- limitations from specimen number;
-- limitations from FE assumptions;
-- need for long-term performance, fire, durability, thermal effects, axial load, two-way bending, engineering validation, etc.
+Keep the conclusion focused on supported findings and their meaning. Do not append a limitations inventory or generic future-work list to the ordinary thesis body. If a separate outlook is explicitly requested, derive its topics from the actual research record rather than a stock checklist.

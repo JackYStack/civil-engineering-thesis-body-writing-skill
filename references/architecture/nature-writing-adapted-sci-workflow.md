@@ -148,11 +148,11 @@ Subsection opening pattern:
 
 Use:
 
-`central finding -> why evidence supports it -> relation to prior work or design practice -> uncertainty/boundary -> practical use`
+`central finding -> why evidence supports it -> relation to prior work or design practice -> tested conditions -> practical use`
 
-Discussion should not repeat every figure. It should explain mechanism, comparison, and limitation.
+Discussion should not repeat every figure. It should explain the supported mechanism, relevant comparison, and meaning under the tested conditions.
 
-Frame limitations as boundaries that define the next refinement step, not as decorative future-work promises.
+Keep negative-result and limitations commentary in working notes instead of inserting it into ordinary Discussion prose.
 
 ### Conclusion
 

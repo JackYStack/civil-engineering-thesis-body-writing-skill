@@ -16,7 +16,7 @@ Use storytelling logic as an internal planning tool, not as dramatic language in
 
 Core storyline:
 
-`core contradiction -> why existing explanations/methods are insufficient -> proposed route -> decisive evidence -> mechanism clarified -> limitation and next refinement`.
+`core contradiction -> why existing explanations/methods are insufficient -> proposed route -> decisive evidence -> mechanism clarified -> supported contribution`.
 
 Rules:
 
@@ -24,7 +24,7 @@ Rules:
 2. **Introduction raises the question.** Show why the problem is not optional by exposing a design trade-off, modelling contradiction, prediction failure, or unexplained response.
 3. **Methods provide the route map.** After the question is raised, methods should tell the reader how the study will break the problem into testable steps. If the paper combines A and B, explain what A cannot solve, what B cannot solve, and why A+B is necessary.
 4. **Results answer in stages.** Do not list every table in order. Lead each major result subsection with the central finding, then use figures, tables, and metrics to prove it. If a finding reverses an expectation, shows a threshold, or changes the controlling mechanism, state that before detailing secondary numbers.
-5. **Discussion closes and reopens carefully.** Acknowledge limitations as technical boundaries and future refinements, not as decorative "cliffhangers". State what remains unresolved because of data range, specimen type, model assumptions, or validation scope.
+5. **Discussion closes on the supported contribution.** State the result's object, indicator, and tested conditions. Keep negative-result and limitations commentary in working notes instead of adding a defensive closing paragraph.
 6. **Transitions should carry curiosity.** Section endings should make the next section necessary: after the introduction, the reader should ask "how will this be solved?"; after methods, "what did the route reveal?"; after results, "why does this happen and where does it hold?"; after discussion, "what needs refinement next?"
 
 Do not overuse dramatic connectors. Words such as "however", "in contrast", "unexpectedly", "nevertheless", and "this indicates" are useful only when supported by evidence. In Chinese thesis prose, prefer measured transitions such as "然而", "需要指出的是", "与上述趋势不同", "进一步分析可知", and "这说明".
@@ -183,7 +183,7 @@ Nonlinear and conditional results deserve explicit wording:
 - Does the paragraph explain mechanism rather than only repeat the figure?
 - Is the boundary of the conclusion clear?
 - Does each major result answer a question raised earlier instead of merely reporting another table?
-- Are limitations framed as evidence boundaries and future refinements rather than unsupported weakness or overpromised future work?
+- Does the discussion end on a supported contribution without a defensive limitations or future-work paragraph?
 
 ## 7. Fast Diagnostic Questions
 

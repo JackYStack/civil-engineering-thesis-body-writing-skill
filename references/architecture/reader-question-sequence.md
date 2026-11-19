@@ -13,8 +13,8 @@ The goal is to make the manuscript answer the reader's questions in the order th
 | What will this study do about it? | State the method route, object, variables, and evidence plan. | Methods opening, research contents, abstract method sentence |
 | Why is this route credible? | Show data source, experiment/FE/ML design, validation, metrics, and reproducibility boundary. | Methods, validation, model training |
 | What was found? | Translate figures, tables, equations, and metrics into a bounded claim. | Results and Discussion |
-| What does the finding mean mechanically or methodologically? | Explain mechanism, comparison, sensitivity, limitation, or design implication. | Discussion, model application |
-| Where can this be used, and where not? | State application scope, parameter range, safety/design boundary, and future work. | Conclusion, model application, limitations |
+| What does the finding mean mechanically or methodologically? | Explain the supported mechanism, comparison, sensitivity, or design implication. | Discussion, model application |
+| Where has this been shown to apply? | State the tested object, conditions, parameter range, and relevant indicator in the positive claim. | Conclusion, model application |
 
 ## Section Handoff Checks
 

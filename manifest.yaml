@@ -51,6 +51,8 @@ axes:
 
 references:
   index: references/index.md
+  evidence_led_narrative: references/architecture/evidence-led-narrative-and-defensive-writing.md
+  academic_prose_cleanup: references/style/academic-prose-cleanup.md
   task_modes: references/meta/task-mode-manifest.md
   output_contracts: references/meta/output-contracts.md
   pressure_tests: references/meta/pressure-test-scenarios.md
@@ -64,6 +66,7 @@ references:
   scientific_figure_color: references/style/scientific-figure-color.md
   hfut_thesis_word_objects: references/style/hfut-thesis-word-objects.md
   nature_figure_cooperation: references/workflows/nature-figure-cooperation.md
+  reviewer_driven_revision: references/workflows/reviewer-driven-revision.md
   on_demand_root: references/
 
 validation:

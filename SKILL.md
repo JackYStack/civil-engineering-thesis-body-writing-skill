@@ -1,6 +1,6 @@
 ---
 name: civil-thesis-body-writing
-description: Use when drafting, revising, citing, translating, auditing, target-journal polishing, coordinating publication figures, or safely editing Chinese civil-engineering master's thesis body text, local paper/SCI manuscripts, Word/docx drafts, Zotero/InstSci-supported literature evidence, or thesis-to-paper materials, especially for 大论文, 小论文, SCI投稿稿, 章节正文, 试验研究, 有限元分析, 机器学习模型, 模型应用, 科研图表, and OOXML-safe revision.
+description: Use when drafting, revising in response to peer review, citing, translating, auditing, target-journal polishing, coordinating publication figures, or safely editing Chinese civil-engineering master's thesis body text, local paper/SCI manuscripts, Word/docx drafts, Zotero/InstSci-supported literature evidence, or thesis-to-paper materials, especially for 大论文, 小论文, SCI投稿稿, 章节正文, 试验研究, 有限元分析, 机器学习模型, 模型应用, 科研图表, and OOXML-safe revision.
 ---
 
 # Civil Thesis Body Writing
@@ -36,7 +36,7 @@ For a short paragraph polish or one-sentence rewrite, the lightweight path is al
 - Prefer local thesis style for 大论文正文 and local paper/SCI style for 小论文 or SCI稿件. Do not copy sample wording or paper-specific facts.
 - Use conflict/puzzle/story logic only as hidden planning. Formal prose should remain measured and civil-engineering oriented.
 - Keep chapter-role comparison and reviewer-facing structural explanation out of thesis body prose. State the engineering object, reused model/formula, method, process, evidence, and boundary directly; keep “Section X solves...Section Y solves...” reasoning in the writing rationale, outline, or response notes.
-- Keep generic applicability disclaimers, engineering-use warnings, missing-record explanations, and future-validation recommendations out of ordinary thesis method/results prose. Sentences such as “超出参数范围需补充有限元分析或试验” and “不能替代规范校核或高保真有限元复核” belong in internal writing notes or `需补充或确认`, unless the user explicitly requests a dedicated limitations section.
+- Keep gratuitous self-critique and generic disclaimers in working notes, not ordinary body prose. Retain material contrary findings, necessary assumptions, and conditions affecting interpretation in the relevant passage; anti-defensive writing must not suppress scientific disclosure. Bound claims by tested objects, conditions, metrics, and evidence.
 - Do not use external literature to replace the user's own results. For the user's test, FE, ML, GUI, formula, or chapter-result claims, cite the user's figures, tables, formulas, data, and section evidence first.
 - Use local-first citation support: user-provided references, current draft citations, Zotero/library full text, local notes, and project files before web or publisher search.
 - Metadata discovery is not full-text support. Title similarity, abstracts, InstSci retrieval status, or Zotero records do not by themselves support sentence-level claims.
@@ -48,6 +48,8 @@ For a short paragraph polish or one-sentence rewrite, the lightweight path is al
 - For thesis format/readiness audits, use `references/workflows/thesis-format-audit.md`; calibrate rules against the controlling template, keep structured reports authoritative, and treat skipped checks as unavailable rather than passed.
 - For thesis or journal figure colour selection/audits, use `references/style/scientific-figure-color.md`; map colour to variable semantics, preserve a manuscript-level colour ledger, and verify colour-vision, grayscale, final-size, and target-journal constraints.
 - For publication-figure planning or execution, use `references/workflows/nature-figure-cooperation.md`: this skill owns the manuscript-facing figure brief and reintegration, while `nature-figure` owns backend selection, plotting, rendering, export, and visual QA.
+
+For reviewer-driven manuscript revision, read `references/workflows/reviewer-driven-revision.md`. Use the existing paper/thesis mode with `revise`, or `docx-revision` for file edits. This branch preserves the author's prose while addressing the actual comment; `nature-response`, when available and needed, handles reply-letter assembly. Necessary assumptions, material contrary evidence, and reviewer-requested technical boundaries must remain visible even when removing generic defensive commentary.
 
 ## Ask Before Acting
 
@@ -70,6 +72,7 @@ If the section, evidence, and intended claim are clear, proceed directly.
 | Rewrite thesis content into a paper/SCI section | `mode: paper-sci`, matching `section`, `operation: revise` |
 | Polish for a named target journal | `mode: target-journal-polish`, `source: external-search` or `local-style-corpus` |
 | Add or reduce citations | `mode: citation-support`, `operation: cite` |
+| Revise body text to address a reviewer comment | Existing paper/thesis mode + `revise`; load `references/workflows/reviewer-driven-revision.md` |
 | Revise a Word manuscript | `mode: docx-revision`, `operation: docx-edit` |
 | Check Chinese-English logic before translation | `mode: translation-logic`, `operation: translate-precheck` |
 | Retrieve papers and import to Zotero | `mode: instsci-zotero`, `operation: import-library` |
@@ -87,8 +90,11 @@ If the section, evidence, and intended claim are clear, proceed directly.
 7. Draft or revise the prose using civil-engineering evidence language.
 8. Run anti-vague language QC: remove unsupported words such as "significant", "effective", "important", "good agreement", and "high value" unless the sentence supplies evidence and boundary.
 9. Run the body-prose meta-discourse gate: move chapter-task comparison, anti-duplication defense, and reviewer-facing structural explanation out of the thesis body.
-10. Run the body-prose disclaimer gate: remove generic extrapolation warnings, normative-check disclaimers, missing-provenance explanations, and prospective validation advice from ordinary method/results prose.
-11. Close with risks, missing evidence, or next step only when they matter, and place them outside the thesis body.
+10. Run the body-prose disclaimer gate: remove generic warnings and editorial self-defense, not qualifications needed to understand or reproduce the results.
+11. For manuscript-level argument, use `references/architecture/evidence-led-narrative-and-defensive-writing.md`: organize around the strongest supported contribution and each experiment's role, without suppressing material contrary evidence. Do not add a generic limitations paragraph by default.
+12. Close with risks, missing evidence, or next step only when they matter, and place them outside the thesis body.
+
+For language polishing, final-text cleanup, or drafting with formulaic prose, load `references/style/academic-prose-cleanup.md`. Select cleanup, polish, or draft intensity within the existing operation; preserve data-to-object and citation-to-claim mappings, genuine uncertainty, author voice, and authorized scope. Its disclosure safeguards clarify older broad anti-defensive wording. This is editing for quality, not detector-score optimization.
 
 ## Source-Specific Rules
 

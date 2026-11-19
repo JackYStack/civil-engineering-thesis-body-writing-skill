@@ -200,5 +200,6 @@ This skill's architecture and several generalized workflows were informed by the
 - [Rimagination/instsci](https://github.com/Rimagination/instsci): paper retrieval, access-status records, and Zotero handoff.
 - [quzhiii/thesis-skills](https://github.com/quzhiii/thesis-skills): thesis formatting, final-readiness, and deterministic audit concepts.
 - [zsyggg/paper-craft-skills](https://github.com/zsyggg/paper-craft-skills): consulted for general paper-reading and presentation workflow awareness.
+- [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill): evidence-led claims, clear experiment roles, and precise revision of defensive prose.
 
 See the [External Skill Sources and Migration Ledger](references/meta/external-skill-sources.md) for reviewed revisions, reported licences, migration status, retained and excluded material, and internal destinations. This project retains generalized rules in original wording or uses explicit cooperation interfaces; it does not implicitly redistribute upstream scripts, data, examples, or branding. Upstream repository licences remain authoritative.

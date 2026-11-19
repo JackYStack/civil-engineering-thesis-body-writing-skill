@@ -12,6 +12,10 @@ Prefer the smallest contract that completes the task. Do not paste every possibl
 - Do not mix final reference numbering with temporary markers unless the user provides an existing numbering system.
 - For file-producing work, report output path and validation performed.
 
+## Reviewer-driven local revision
+
+For a single review comment or local amendment, use this smaller contract instead of a full paper-rebuilding package: give the insertion/replacement location with a searchable original-text anchor, the ready-to-paste passage in the manuscript language, and a brief explanation of the actual change. Include unresolved evidence only when material. Provide old/new snippets when requested or useful for proofreading. Distinguish proposed text, author-reported completion, and edits verified in the current file. Add the reply text only when requested; use `nature-response` if available for a full response package. Do not invent line numbers before rendering the current manuscript.
+
 ## Contracts by Mode
 
 ### `thesis-body`

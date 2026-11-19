@@ -200,5 +200,6 @@ civil-thesis-body-writing/
 - [Rimagination/instsci](https://github.com/Rimagination/instsci)：论文获取、访问状态记录和 Zotero 交接流程。
 - [quzhiii/thesis-skills](https://github.com/quzhiii/thesis-skills)：论文格式、终稿 readiness 和确定性审查方法。
 - [zsyggg/paper-craft-skills](https://github.com/zsyggg/paper-craft-skills)：论文阅读与展示工作流参考。
+- [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill)：以证据组织主张、明确实验职责和精简防御性表述的写作规则。
 
 各项目的审阅版本、许可证、迁移状态、保留内容、未迁移内容及本 Skill 内部落点，见[外部 Skill 来源与迁移索引](references/meta/external-skill-sources.md)。本项目仅以重新表述的规则或显式协作接口吸收通用方法，不默认复制上游脚本、数据、示例或品牌规范；具体许可证仍以各上游仓库为准。

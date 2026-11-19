@@ -1,5 +1,20 @@
 # Real Task Regression Results
 
+## 2026-11-18: Academic prose cleanup comparison
+
+This public-safe summary records an exploratory comparison, not a claim of improved writing quality. The private corpus, source paths, manuscript excerpts, rule snapshots, and raw model outputs are not distributed with this skill.
+
+- Inputs: eight real civil-engineering manuscript excerpts and four newly constructed stress cases, including one English paragraph.
+- Conditions: prior writing rules reconstructed from the actual edits versus the integrated cleanup rules; two fresh-context repetitions per condition, four authoring calls and 48 revised outputs in total. The control is not a complete historical repository snapshot.
+- Review: 24 masked pairs with randomized X/Y placement. Two fresh-context model reviewers each evaluated one repetition's 12 pairs. Each pair had one reviewer, not two independent ratings.
+- Result: all 24 pairs tied under the preregistered rubric; no critical scientific-meaning defect was identified by the reviewers in either condition. All ratings reached the rubric ceiling, limiting its sensitivity.
+- Deterministic checks found no numeric/sign-token or paragraph-count changes across the 48 outputs. Token equality does not establish semantic equivalence; targeted manual comparison also checked model/metric mappings and necessary qualifications.
+- Both conditions retained material adverse findings, model assumptions, and genuine uncertainty in the tested passages. The older rules already contained technical-disclosure safeguards, so this comparison does not show that the added guidance alone prevented an observed failure.
+
+Interpretation: no clear quality advantage or regression was detected on this small, purpose-selected set. This is neither a statistical superiority/equivalence test nor evidence of detector performance, Word-format safety, source-data correctness, or individual upstream-skill effects. Treat the integration as rule clarification with limited behavioral non-regression evidence, not a verified quality improvement. No manuscript or skill rules were changed during the comparison to manufacture a favorable result.
+
+## Historical Phase 9 Regression
+
 Date: 2026-07-14
 
 Purpose: record a public-safe Phase 9 regression pass after the Phase 8 router/distribution hardening. The checks use anonymized prompt shapes and existing public-safe scenario templates. They do not include private manuscripts, Zotero item keys, local paper titles, DOI lists, or unpublished data.

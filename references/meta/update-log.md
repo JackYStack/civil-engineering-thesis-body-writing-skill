@@ -1,5 +1,23 @@
 # civil-thesis-body-writing 更新日志汇总
 
+## 2026-11-18: 对照结果归档与发布整理
+
+在 `references/meta/real-task-regression-results.md` 补充公开安全的对照摘要：8个真实节选与4个构造样本，两条件各重复2次，48份修订组成24对隐藏标签比较，全部判平，未检出明确质量增益或退化。明确旧组为写作规则重建、评分天花板、每对单评审及小样本限制，不将满分或平局宣传为显著提升或等效性证明。完整语料、源路径、论文数据和原始实验材料保留在作者本地，不进入skill仓库。
+
+本次发布整理同时纳入入口已经引用的审稿局部修订工作流及其合同、技术披露保护和压力场景；不遗漏该未提交依赖，不发布缓存或私有论文文件。此前“未提交或推送”的描述是当时执行阶段的历史记录。
+
+## 2026-11-18: 四源学术表达清理与反防御性边界校准
+
+审阅 `matsuikentaro1/humanizer_academic`、`AIScientists-Dev/academic-humanizer`、`junbolian/Academic-Humanizer`、`taehyeonglim/academic-humanizer` 的核心规则及相关语域/可读性指南，版本和许可证见来源台账。新增 `references/style/academic-prose-cleanup.md`，将最小清理、常规润色和新稿写作作为既有操作内的编辑强度接入 router、manifest、index、core 和 revise 路由，不新增主模式或安装四个独立 skill。
+
+保留证据强度校准、作者风格、清楚优先于压缩、术语/数据/引用及对应关系保护；不迁移医学事实、个人句长与标点偏好、固定改写率、强制节奏变化、上游代码或检测率承诺。澄清反防御性写作针对冗余自辩，不得隐瞒重要负面发现、必要假设、真实不确定性或适用条件。保留“不默认添加泛化局限性段落”的原有偏好。更新既有对比压力场景并新增四个清理场景；结构校验不等于行为验证，运行结果以本次交付记录为准。
+
+本次验证：`scripts/validate_all.py` 全部通过，包括 router/manifest/contract、20 个压力场景结构检查、9 个前向场景结构检查、42 项分发变异测试及官方 quick_validate；`git diff --check` 无空白错误。另由独立上下文只读执行三项短文本行为抽查：定稿最小清理、保留真实不确定性及必要工况/不利结果、识别模型与数值映射互换，三项均符合要求。该抽查不代表全文、Word 版式、原始数据核验或检测器性能验证。本轮未提交或推送，保留原有未提交改动。
+
+## 2026-09-20: 反防御性写作规则整合
+
+安装并审阅 `Adkid-Zephyr/anti-defensive-writing-Skill` 中文版（main: `102c8b21acf5eda3a0aef3d9779a65db646c8980`，MIT）。新增 `references/architecture/evidence-led-narrative-and-defensive-writing.md`，将最强证据驱动的中心主张、贡献直陈、实验论证职责和摘要至结论的结构检查接入 router、manifest、core workflow 与 paper/SCI 模式。按用户反馈，以该上游 Skill 的理念为主：负面结果和局限性不进入普通正文，留在证据库或写作记录中用于检查主张；正文只陈述有证据支持、限定了对象与指标的贡献，不虚构全面领先或更改原始数据。同步更新来源台账与中英文致谢。
+
 更新时间：2026-07-19
 
 ## 2026-07-19: Public repository readiness
@@ -681,3 +699,7 @@ thesis-skills 定位：
 - 规则被明确限定为用户确认的项目级格式。现行正式模板或明确校方要求始终具有更高优先级。
 
 维护过程遵循内置 `skill-creator` 以及 `superpowers:writing-skills` / `superpowers:test-driven-development` 的 RED-GREEN-REFACTOR 方法。RED 基线暴露出通用经验会误用三行图容器、`Table` 标签、0.75 pt 表头线和三列公式布局；新增确定性契约后再执行同场景回归与完整验证。
+
+### 2026-10-16：审稿驱动的正文局部修订
+
+新增按需加载的 `reviewer-driven-revision` 工作流，沿用现有 paper/thesis/Word 模式，不增加重复模式。重点为保留原文风格、插入位置与上下文衔接、工程解释的局部完善、采样约束与模型假设的证据区分，以及正文改动向回复证据的交接。澄清反防御性规则不删除必要假设、实质性反证或审稿要求的技术条件。补充三个压力场景；场景定义与结构校验不等同于模型行为测试。未将本次论文的参数值、文献编号或本地路径写成通用规则。

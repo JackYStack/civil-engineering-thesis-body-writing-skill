@@ -102,12 +102,11 @@ Discussion is not repeated results and not a literature review. It should explai
 
 - why the result occurs;
 - how it compares with representative studies, formulas, standards, or mechanisms;
-- where the result is valid;
-- what uncertainty or limitation remains.
+- where the supported result applies.
 
 Do not write only `the results are consistent with previous studies`. State which studies, which result, which indicator, and whether differences exist.
 
-Limitations should be presented as technical boundaries and future refinement paths. Avoid both hiding limitations and inflating them into unsupported future claims.
+Keep negative-result and limitations commentary in the evidence bank or revision notes rather than ordinary Discussion prose. State the conditions and metric of the positive finding directly; narrow the claim when the evidence does not support a broader one.
 
 ### Conclusion
 
@@ -151,7 +150,7 @@ Before returning an SCI-style draft, check:
 - Does the introduction narrow from field context to the manuscript's exact gap?
 - Are methods reproducible at the level needed for peer review?
 - Does every results paragraph point to a figure, table, metric, or dataset?
-- Does the discussion explain mechanism, comparison, uncertainty, and boundary?
+- Does the discussion explain the supported mechanism, comparison, and conditions without defensive limitations prose?
 - Does the paper keep one core contradiction from introduction through discussion, rather than switching to unrelated claims?
 - Are conclusions supported by earlier results?
 - Are figure/table titles, variable names, units, and references consistent?
