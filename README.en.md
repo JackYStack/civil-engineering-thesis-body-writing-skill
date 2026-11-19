@@ -16,7 +16,7 @@
   </p>
 </div>
 
-`civil-thesis-body-writing` is a Codex skill for civil-engineering theses and engineering-journal manuscripts. It organizes research objects, data, figures, equations, and literature into evidence-bounded prose, with additional workflows for SCI compression, citation auditing, DOCX creation/conversion/safe revision, and InstSci/Zotero-assisted literature management.
+`civil-thesis-body-writing` is a Codex skill for civil-engineering theses and engineering-journal manuscripts. It organizes research objects, data, figures, equations, and literature into evidence-bounded prose, with workflows for academic prose cleanup, reviewer-driven local revision, SCI compression, citation auditing, DOCX creation/conversion/safe revision, and InstSci/Zotero-assisted literature management. Language work distinguishes minimal cleanup, regular polishing, and drafting while preserving scholarly register, author voice, and necessary technical content.
 
 > It does not invent data, equations, experimental results, or references, and it does not present machine-learning predictions or GUI outputs as design-code conclusions.
 
@@ -31,6 +31,9 @@
 | Goal | Copy-ready prompt |
 | --- | --- |
 | Revise a thesis subsection | `Use civil-thesis-body-writing to revise this subsection. Preserve figures, equations, parameters, and citations; remove vague claims; and list missing evidence.` |
+| Minimally clean final text | `Use civil-thesis-body-writing for minimal cleanup of this final text. Change only identifiable stock phrases or expression defects. Leave other wording, paragraph structure, terms, numbers, equations, and citations unchanged, and preserve genuine uncertainty.` |
+| Make a reviewer-driven local amendment | `Use civil-thesis-body-writing to address this reviewer comment in the relevant passage only. Preserve the author's voice and give a searchable insertion or replacement location, revised text, and a brief explanation. Do not invent page or line numbers.` |
+| Clarify the argument and contribution | `Use civil-thesis-body-writing to organize this section around its strongest supported contribution. Remove redundant self-defense without hiding material adverse findings, necessary assumptions, or applicability conditions.` |
 | Audit or reduce citations | `Use civil-thesis-body-writing to identify which sentence each source supports and grade it as strong, partial, background, or not recommended.` |
 | Create, convert, or safely revise Word | `Use civil-thesis-body-writing for this Word task. First classify it as creation, Markdown conversion, or existing-DOCX revision; then follow the institution/journal template and validate equations, numbering, fields, and compatibility.` |
 | Organize InstSci/Zotero results | `Use civil-thesis-body-writing to organize these search results and show a deduplicated Zotero import preview before writing to the library.` |
@@ -54,12 +57,17 @@ flowchart TD
 | --- | --- | --- |
 | Thesis body writing | Chinese prose organized for the selected chapter task | User figures, equations, and data remain the primary evidence |
 | Paper/SCI writing | Abstract, introduction, results/discussion, conclusion, title, and highlights | Compress around one central question without expanding conclusions |
+| Academic prose cleanup | Revised prose and notes at cleanup, polish, or draft intensity | No mechanical word bans or forced sentence variation; check numbers, terms, citations, and their semantic mappings |
+| Reviewer-driven local revision | Insertion/replacement anchors, revised passages, and reply-handoff information | Preserve sound original text; distinguish proposals from implemented edits; cooperate with `nature-response` for reply-package assembly only when needed |
+| Contribution-led, non-defensive writing | Evidence-led central claim, experiment roles, and section argument | Remove rhetorical self-defense, not necessary disclosure; do not turn a local advantage into universal superiority |
 | Citation support | Temporary markers, candidate list, and support grades | Search hits and title similarity are not full-text support |
 | DOCX creation and revision | A new, converted, or structure-preserving document version | Template first; do not overwrite by default; validate native Word objects and rendering |
 | InstSci/Zotero | Retrieval organization, import preview, and duplicate checks | Confirm before library writes; access success is not citation support |
 | Target-journal polishing | Journal requirements, exemplar differences, and a revision blueprint | Research before rewriting; do not imitate exemplar wording |
 | Format and final audit | Rule authority, format ledger, readiness gate, and fix preview | Generic rules do not prove institutional compliance; skipped checks are not passes |
 | Scientific-figure cooperation | Figure brief, semantic colour mapping, nature-figure handoff, artifact QA, and manuscript reintegration | The writing skill does not bypass the Python/R gate or claim artifacts without data and inspected files |
+
+See the [academic prose cleanup guide](references/style/academic-prose-cleanup.md), [reviewer-driven revision workflow](references/workflows/reviewer-driven-revision.md), and [anti-defensive writing guide](references/architecture/evidence-led-narrative-and-defensive-writing.md). The three language-editing intensities operate within the existing draft/revise routes; they are not separately installed skills.
 
 ## Installation
 
@@ -126,6 +134,9 @@ Use civil-thesis-body-writing to check this civil-engineering paragraph for vagu
 - Zotero metadata, abstracts, and download status are not sufficient sentence-level citation evidence.
 - Design values, resistance claims, and code-related conclusions must retain their loading conditions, parameter ranges, and standard basis.
 - DOCX work first selects creation, conversion, or revision; institution/journal templates override generic defaults, existing files are preserved by default, and formulas, fields, comments, tracked changes, and numbering are checked as Word objects.
+- Minimal cleanup does not authorize structural rewriting; regular polishing does not authorize new facts. Check both literal values and their mappings to models, metrics, conditions, and citation-supported claims.
+- Anti-defensive writing does not mean deleting negative results. Preserve material adverse findings, modeling assumptions, applicability conditions, and genuine uncertainty; do not add a generic limitations paragraph by default.
+- Prose cleanup targets clarity, accuracy, and scholarly register. It does not promise AI-detector scores or remove institution- or venue-required AI-assistance disclosures.
 
 ## Examples and Recipes
 
@@ -201,5 +212,9 @@ This skill's architecture and several generalized workflows were informed by the
 - [quzhiii/thesis-skills](https://github.com/quzhiii/thesis-skills): thesis formatting, final-readiness, and deterministic audit concepts.
 - [zsyggg/paper-craft-skills](https://github.com/zsyggg/paper-craft-skills): consulted for general paper-reading and presentation workflow awareness.
 - [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill): evidence-led claims, clear experiment roles, and precise revision of defensive prose.
+- [matsuikentaro1/humanizer_academic](https://github.com/matsuikentaro1/humanizer_academic): clarity before compression, explicit comparators and conditions, clear referents, and protection of substantive academic phrasing.
+- [AIScientists-Dev/academic-humanizer](https://github.com/AIScientists-Dev/academic-humanizer): claim-evidence calibration, author-voice matching, and scholarly register protection.
+- [junbolian/Academic-Humanizer](https://github.com/junbolian/Academic-Humanizer): editing intensity, located reasons for changes, and comparison of protected data, citations, and qualifiers.
+- [taehyeonglim/academic-humanizer](https://github.com/taehyeonglim/academic-humanizer): academic register protection for genuine uncertainty, method passive voice, technical vocabulary, and range punctuation.
 
 See the [External Skill Sources and Migration Ledger](references/meta/external-skill-sources.md) for reviewed revisions, reported licences, migration status, retained and excluded material, and internal destinations. This project retains generalized rules in original wording or uses explicit cooperation interfaces; it does not implicitly redistribute upstream scripts, data, examples, or branding. Upstream repository licences remain authoritative.

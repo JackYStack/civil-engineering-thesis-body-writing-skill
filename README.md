@@ -16,7 +16,7 @@
   </p>
 </div>
 
-`civil-thesis-body-writing` 是面向土木工程学位论文与工程期刊稿件的 Codex skill。它将研究对象、数据、图表、公式和文献组织成有证据边界的正文，并支持 SCI 压缩、引用核查、DOCX 创建/转换/安全修改以及 InstSci/Zotero 文献流程。
+`civil-thesis-body-writing` 是面向土木工程学位论文与工程期刊稿件的 Codex skill。它将研究对象、数据、图表、公式和文献组织成有证据边界的正文，并支持学术表达清理、审稿意见驱动的局部修改、SCI 压缩、引用核查、DOCX 创建/转换/安全修改以及 InstSci/Zotero 文献流程。语言修改区分最小清理、常规润色和新稿写作，保留专业语气、作者风格与必要技术信息。
 
 > 它不会替你编造数据、公式、试验结果或参考文献，也不会把机器学习预测或 GUI 输出写成规范设计结论。
 
@@ -31,6 +31,9 @@
 | 想完成的任务 | 可直接使用的提示词 |
 | --- | --- |
 | 修改学位论文小节 | `使用 civil-thesis-body-writing 修改这一小节。保留图表、公式、参数和引用，删除空泛判断，并列出缺少的证据。` |
+| 定稿最小清理 | `使用 civil-thesis-body-writing 对这段定稿做最小清理，只改可定位的套话或表达缺陷。其余文字、段落结构、术语、数字、公式和引用不动，保留真实不确定性。` |
+| 按审稿意见微修 | `使用 civil-thesis-body-writing 回应这条审稿意见，只修改相关段落，保留原文风格。给出可检索的插入或替换位置、修改稿和简短说明，不编造页码或行号。` |
+| 梳理论证与贡献 | `使用 civil-thesis-body-writing 围绕最有证据支持的贡献梳理本节论证，删除冗余自辩，不隐瞒影响结论的不利发现、必要假设或适用条件。` |
 | 核查或精简引用 | `使用 civil-thesis-body-writing 核查这些引用分别支持哪一句话，按强支持、部分支持、背景支持和不建议引用分级。` |
 | 创建、转换或安全修改 Word 稿件 | `使用 civil-thesis-body-writing 处理这个 Word 任务。先区分新建、Markdown 转换或已有 DOCX 修订，再按学校/期刊模板生成新文件并校核公式、编号、域和兼容性。` |
 | 整理 InstSci/Zotero 文献 | `使用 civil-thesis-body-writing 整理这些检索结果，先给 Zotero 导入预览和查重结果，不直接写入文库。` |
@@ -54,12 +57,17 @@ flowchart TD
 | --- | --- | --- |
 | 学位论文正文 | 按章节任务组织的中文正文 | 以用户图表、公式和数据为主要证据 |
 | 小论文/SCI | 摘要、引言、结果讨论、结论与亮点 | 围绕单一中心问题压缩，不扩大结论 |
+| 学术表达清理 | 按最小清理、常规润色或新稿写作强度处理的正文与修改说明 | 不机械禁词或强制句式变化；核对数字、术语、引用及其对应关系 |
+| 审稿局部修订 | 对应审稿问题的插入/替换位置、修改段落及回复交接信息 | 保留有效原文；区分建议修改与实际完成；仅在需要时协作 `nature-response` 组装回复包 |
+| 贡献组织与反防御性写作 | 以证据组织的中心主张、实验职责与章节论证 | 删除冗余自辩而非必要披露，不把局部优势写成全面领先 |
 | 引用核查 | 临时引用、候选清单与支持等级 | 检索命中或题名相似不等于全文支持 |
 | DOCX 创建与修改 | 新建、Markdown 转换或保留格式的修订版本 | 模板优先；默认不覆盖原文件；检查原生 Word 对象和渲染结果 |
 | InstSci/Zotero | 检索整理、导入预览与查重结果 | 写入文库前确认，访问成功不等于可引用 |
 | 目标期刊润色 | 期刊要求、范文差异与全文修改蓝图 | 先调研后重写，不机械模仿范文句式 |
 | 格式与终稿审查 | 规则依据、格式问题台账、Readiness Gate 与修复预览 | 通用规则不等于学校合规；跳过的检查不能记为通过 |
 | 科研图表协作 | 图件 brief、语义化配色、nature-figure 绘图交接、产物 QA 与正文再集成 | 正文 Skill 不绕过 Python/R 后端门；没有数据或产物时不声称已生成 |
+
+具体规则见[学术表达清理指南](references/style/academic-prose-cleanup.md)、[审稿局部修订流程](references/workflows/reviewer-driven-revision.md)和[反防御性写作指南](references/architecture/evidence-led-narrative-and-defensive-writing.md)。三种语言处理强度沿用现有起草/修订操作，不是额外安装的独立 skill。
 
 ## 安装
 
@@ -126,6 +134,9 @@ bash scripts/install.sh
 - Zotero 元数据、摘要和下载状态不能单独作为句子级引用证据。
 - 设计值、承载力和规范性结论必须保留适用工况、参数范围和标准依据。
 - DOCX 任务先区分新建、转换和修订；学校/期刊模板高于通用格式，已有文件默认不覆盖，公式、域、批注、修订和编号需按对象校核。
+- 最小清理不授权结构重写；常规润色不擅自补充事实。修改既核对字面值，也核对数值对应的模型、指标、工况以及引用支持的主张。
+- 反防御性写作不等于删除负面结果。保留影响解释的重要不利发现、建模假设、适用条件和真实不确定性，不默认添加泛化的局限性段落。
+- 表达清理以清楚、准确和专业语域为目标，不承诺 AI 检测分数，也不删除学校或期刊要求的 AI 辅助使用声明。
 
 ## 示例与模板
 
@@ -201,5 +212,9 @@ civil-thesis-body-writing/
 - [quzhiii/thesis-skills](https://github.com/quzhiii/thesis-skills)：论文格式、终稿 readiness 和确定性审查方法。
 - [zsyggg/paper-craft-skills](https://github.com/zsyggg/paper-craft-skills)：论文阅读与展示工作流参考。
 - [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill)：以证据组织主张、明确实验职责和精简防御性表述的写作规则。
+- [matsuikentaro1/humanizer_academic](https://github.com/matsuikentaro1/humanizer_academic)：清楚优先于压缩，明确比较对象、条件与指代，保留有内容的学术表达。
+- [AIScientists-Dev/academic-humanizer](https://github.com/AIScientists-Dev/academic-humanizer)：主张强度与证据匹配、作者风格校准及学术语气保护。
+- [junbolian/Academic-Humanizer](https://github.com/junbolian/Academic-Humanizer)：分级编辑强度、可定位的修改理由，以及数据、引用与限定语的对照核查。
+- [taehyeonglim/academic-humanizer](https://github.com/taehyeonglim/academic-humanizer)：学术语域保护，保留真实不确定性、方法被动语态、专业词汇和范围符号。
 
 各项目的审阅版本、许可证、迁移状态、保留内容、未迁移内容及本 Skill 内部落点，见[外部 Skill 来源与迁移索引](references/meta/external-skill-sources.md)。本项目仅以重新表述的规则或显式协作接口吸收通用方法，不默认复制上游脚本、数据、示例或品牌规范；具体许可证仍以各上游仓库为准。
