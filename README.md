@@ -3,6 +3,8 @@
   <p>
     <a href="https://github.com/JackYStack/civil-engineering-thesis-body-writing-skill/actions/workflows/validate.yml"><img alt="Validation" src="https://github.com/JackYStack/civil-engineering-thesis-body-writing-skill/actions/workflows/validate.yml/badge.svg"></a>
     <img alt="Platform Codex" src="https://img.shields.io/badge/platform-Codex-303942">
+    <img alt="Claude Code 适配" src="https://img.shields.io/badge/adapter-Claude_Code-64746b">
+    <img alt="WorkBuddy 适配" src="https://img.shields.io/badge/adapter-WorkBuddy-64746b">
     <a href="README.en.md"><img alt="中文与 English" src="https://img.shields.io/badge/language-中文%20%7C%20English-f4c542"></a>
   </p>
   <p>
@@ -16,15 +18,19 @@
   </p>
 </div>
 
-`civil-thesis-body-writing` 是面向土木工程学位论文与工程期刊稿件的 Agent skill，以 Codex 为默认安装平台，并提供 Claude Code 安装和 WorkBuddy 项目安装/技能包导入适配。它将研究对象、数据、图表、公式和文献组织成有证据边界的正文，并支持学术表达清理、审稿意见驱动的局部修改、SCI 压缩、引用核查、DOCX 创建/转换/安全修改以及 InstSci/Zotero 文献流程。语言修改区分最小清理、常规润色和新稿写作，保留专业语气、作者风格与必要技术信息。
+`civil-thesis-body-writing` 是面向土木工程学位论文与工程期刊稿件的 Agent skill，覆盖文献阅读与中英翻译、证据组织、正文起草与润色、试验/有限元/机器学习报告、公式图表检查、审稿修订及 Word 交付。以 Codex 为默认安装平台，提供 Claude Code 和 WorkBuddy 安装/技能包适配；不同客户端的工具和权限分别配置，不随规则包自动迁移。
 
-> 它不会替你编造数据、公式、试验结果或参考文献，也不会把机器学习预测或 GUI 输出写成规范设计结论。
+它将研究对象、数据、图表、公式与文献关联到具体论点，保留来源、条件和真实不确定性。日常文献讨论也区分原文、忠实译文与解释；修改结果后检查正文、摘要、结论、图表和审稿回复的一致性。语言修改沿用最小清理、常规润色和新稿写作三种强度，不以去防御为由删除必要反例或假设。
+
+> 不编造数据、公式、试验结果或参考文献，不把预测精度写成规范设计安全。科学含义、数值、可编辑对象和页面显示分别核对；缺少材料或工具时明确说明，不冒称完成。
+
+规则导航：[研究与证据](references/workflows/research-integrity-and-reproducibility.md) · [文献翻译](references/workflows/literature-translation-grounding.md) · [公式图表](references/workflows/equation-figure-table-integrity.md) · [一致性与交付](references/workflows/manuscript-consistency-and-delivery.md) · [整合范围与未迁移项](references/meta/systematic-integration-map.md)
 
 ## 快速使用
 
 1. 使用 `git clone https://github.com/JackYStack/civil-engineering-thesis-body-writing-skill.git` 获取仓库，或在 GitHub 仓库页面选择 `Code -> Download ZIP` 并完整解压。
-2. 在仓库或解压目录按平台运行安装命令：Windows PowerShell 使用 `.\scripts\install.ps1`；Linux/macOS Bash 使用 `bash scripts/install.sh`。
-3. 重启 Codex，然后发送：`使用 civil-thesis-body-writing 修改这段土木工程论文正文，保留数据、术语、公式和引用，不补写没有证据的结论。`
+2. Codex 安装：Windows PowerShell 使用 `.\scripts\install.ps1`，Linux/macOS Bash 使用 `bash scripts/install.sh`；其他平台见 [Claude Code 与 WorkBuddy](#claude-code-与-workbuddy)。
+3. 在目标客户端加载技能后发送：`使用 civil-thesis-body-writing 修改这段土木工程论文正文，保留数据、术语、公式和引用，不补写没有证据的结论。` Codex 安装后需重启；其他平台按下方适配步骤启用。
 
 ## 常用任务模板
 
@@ -35,6 +41,11 @@
 | 按审稿意见微修 | `使用 civil-thesis-body-writing 回应这条审稿意见，只修改相关段落，保留原文风格。给出可检索的插入或替换位置、修改稿和简短说明，不编造页码或行号。` |
 | 梳理论证与贡献 | `使用 civil-thesis-body-writing 围绕最有证据支持的贡献梳理本节论证，删除冗余自辩，不隐瞒影响结论的不利发现、必要假设或适用条件。` |
 | 核查或精简引用 | `使用 civil-thesis-body-writing 核查这些引用分别支持哪一句话，按强支持、部分支持、背景支持和不建议引用分级。` |
+| 翻译并解释文献 | `使用 civil-thesis-body-writing 翻译并解释这段文献，注明实际来源和读取范围，保留否定、数值归属和工况；将忠实译文、你的解释及能支持的正文论点分开。` |
+| 检查试验、有限元或机器学习报告 | `使用 civil-thesis-body-writing 检查这段方法与结果的证据链、样本单位、标定/验证、数据划分和指标定义；只修改表述，不新增试验或启动计算。` |
+| 核对公式与图表 | `使用 civil-thesis-body-writing 核查公式来源、符号、单位、假设和适用域，以及图表的数据、变换、误差与正文对应关系。排版和科学内容分开检查，无法确认处不要猜。` |
+| 复核表格数值 | `使用 civil-thesis-body-writing 按明确口径只读复核这个 CSV 的均值、变化率、回归误差及组间重叠。先确认列和指标映射，不改原始数据，报告实际执行的检查。` |
+| 更新摘要、结论和回复引用 | `使用 civil-thesis-body-writing 根据这次结果变更检查受影响的正文、图表、摘要、结论和审稿回复；区分建议修改与当前文件中已确认的修改，不虚构页码。` |
 | 创建、转换或安全修改 Word 稿件 | `使用 civil-thesis-body-writing 处理这个 Word 任务。先区分新建、Markdown 转换或已有 DOCX 修订，再按学校/期刊模板生成新文件并校核公式、编号、域和兼容性。` |
 | 整理 InstSci/Zotero 文献 | `使用 civil-thesis-body-writing 整理这些检索结果，先给 Zotero 导入预览和查重结果，不直接写入文库。` |
 | 按目标期刊润色 | `使用 civil-thesis-body-writing 调研目标期刊与同方向范文，先给出结构和深度差异，再制定整篇修改方案。` |
@@ -44,12 +55,17 @@
 
 ```mermaid
 flowchart TD
-    A[论文材料、图表、公式与文献] --> B[证据库与术语台账]
-    B --> C[识别文稿类型和章节任务]
-    C --> D[起草、修改、引用或 DOCX 操作]
-    D --> E[防空泛、证据与边界检查]
-    E --> F[正文稿、引用清单或新 DOCX 文件]
+    A[文稿、数据、图表、公式与文献] --> B[来源定位、证据库与术语台账]
+    B --> C[按体裁、章节和任务加载规则]
+    C --> D[起草、翻译、润色、引用或文档修订]
+    D --> E[科学含义、数值及跨章节一致性核对]
+    E --> F[正文、译文、审查意见或文件交付]
+    D -. 按需且获得授权 .-> G[专项绘图、计算与文档工具]
+    G --> H[核对实际产物、原生对象和渲染]
+    H --> F
 ```
+
+普通小段修改只加载相关规则，不强制运行整套流程。只读数值工具可复算显式映射的 CSV；绘图、符号/统计计算、FE 求解和 Word/PDF 渲染由可用专项工具执行，未执行的步骤不计为通过。
 
 ## 主要能力
 
@@ -153,6 +169,9 @@ bash scripts/install.sh
 - 外部文献用于背景、方法来源、机理解释和横向比较，不替代本文结果。
 - Zotero 元数据、摘要和下载状态不能单独作为句子级引用证据。
 - 设计值、承载力和规范性结论必须保留适用工况、参数范围和标准依据。
+- 公式的来源、变量、量纲、数学关系和力学假设分别检查；量纲一致或数值代入正确，不代表模型有效或可直接用于工程设计。
+- 定量图表必须追溯实际数据与处理过程；生成式概念图不能伪装成试验照片、有限元云图、实测曲线或统计证据。
+- 数值工具只核查声明的 CSV 运算和分组关系，不自动理解论文、补齐缺失值或证明数据完全无泄漏。
 - DOCX 任务先区分新建、转换和修订；学校/期刊模板高于通用格式，已有文件默认不覆盖，公式、域、批注、修订和编号需按对象校核。
 - 最小清理不授权结构重写；常规润色不擅自补充事实。修改既核对字面值，也核对数值对应的模型、指标、工况以及引用支持的主张。
 - 反防御性写作不等于删除负面结果。保留影响解释的重要不利发现、建模假设、适用条件和真实不确定性，不默认添加泛化的局限性段落。

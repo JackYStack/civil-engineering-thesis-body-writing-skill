@@ -3,6 +3,8 @@
   <p>
     <a href="https://github.com/JackYStack/civil-engineering-thesis-body-writing-skill/actions/workflows/validate.yml"><img alt="Validation" src="https://github.com/JackYStack/civil-engineering-thesis-body-writing-skill/actions/workflows/validate.yml/badge.svg"></a>
     <img alt="Platform Codex" src="https://img.shields.io/badge/platform-Codex-303942">
+    <img alt="Claude Code adapter" src="https://img.shields.io/badge/adapter-Claude_Code-64746b">
+    <img alt="WorkBuddy adapter" src="https://img.shields.io/badge/adapter-WorkBuddy-64746b">
     <a href="README.md"><img alt="English and Chinese" src="https://img.shields.io/badge/language-English%20%7C%20中文-f4c542"></a>
   </p>
   <p>
@@ -16,15 +18,19 @@
   </p>
 </div>
 
-`civil-thesis-body-writing` is an Agent skill for civil-engineering theses and engineering-journal manuscripts, with Codex as its default installation target and adapters for Claude Code installation and WorkBuddy project installation/package import. It organizes research objects, data, figures, equations, and literature into evidence-bounded prose, with workflows for academic prose cleanup, reviewer-driven local revision, SCI compression, citation auditing, DOCX creation/conversion/safe revision, and InstSci/Zotero-assisted literature management. Language work distinguishes minimal cleanup, regular polishing, and drafting while preserving scholarly register, author voice, and necessary technical content.
+`civil-thesis-body-writing` is an Agent skill for civil-engineering theses and engineering-journal manuscripts. It covers source-grounded reading and Chinese-English translation, evidence organization, drafting and polishing, experiment/FE/ML reporting, equation and display checks, reviewer revision, and Word delivery. Codex is the default installation target, with installation/package adapters for Claude Code and WorkBuddy. Tools and permissions are configured separately in each client, not transferred with the rule package.
 
-> It does not invent data, equations, experimental results, or references, and it does not present machine-learning predictions or GUI outputs as design-code conclusions.
+It links research objects, data, displays, formulas and literature to specific claims while preserving sources, conditions and genuine uncertainty. Even informal literature discussions distinguish source wording, faithful translation and interpretation. Result changes trigger affected body/abstract/conclusion/display/reply checks. Language editing retains cleanup, polish and draft intensities; removing rhetorical self-defense never authorizes deleting material adverse evidence or assumptions.
+
+> No invented data, equations, test results or references, and no conversion of predictive accuracy into design-code safety. Scientific meaning, numeric agreement, editable objects and rendering are separate checks; unavailable inputs or tools are reported, not passed off as completion.
+
+Rule navigation: [Research and evidence](references/workflows/research-integrity-and-reproducibility.md) · [Grounded translation](references/workflows/literature-translation-grounding.md) · [Equations and displays](references/workflows/equation-figure-table-integrity.md) · [Consistency and delivery](references/workflows/manuscript-consistency-and-delivery.md) · [Integration scope and exclusions](references/meta/systematic-integration-map.md)
 
 ## Quick Start
 
 1. Run `git clone https://github.com/JackYStack/civil-engineering-thesis-body-writing-skill.git`, or select `Code -> Download ZIP` on the GitHub repository page and fully extract it.
-2. From the repository or extracted directory, run `.\scripts\install.ps1` in Windows PowerShell or `bash scripts/install.sh` in Linux/macOS Bash.
-3. Restart Codex and send: `Use civil-thesis-body-writing to revise this civil-engineering manuscript section. Preserve data, terminology, equations, and citations, and do not add conclusions unsupported by the supplied evidence.`
+2. For Codex, run `.\scripts\install.ps1` in Windows PowerShell or `bash scripts/install.sh` in Linux/macOS Bash. Other clients: see [Claude Code and WorkBuddy](#claude-code-and-workbuddy).
+3. Load the skill in the intended client and send: `Use civil-thesis-body-writing to revise this civil-engineering manuscript section. Preserve data, terminology, equations, and citations, and do not add conclusions unsupported by the supplied evidence.` Restart Codex after installation; enable other clients using the adapter steps below.
 
 ## Common Workflows
 
@@ -35,6 +41,11 @@
 | Make a reviewer-driven local amendment | `Use civil-thesis-body-writing to address this reviewer comment in the relevant passage only. Preserve the author's voice and give a searchable insertion or replacement location, revised text, and a brief explanation. Do not invent page or line numbers.` |
 | Clarify the argument and contribution | `Use civil-thesis-body-writing to organize this section around its strongest supported contribution. Remove redundant self-defense without hiding material adverse findings, necessary assumptions, or applicability conditions.` |
 | Audit or reduce citations | `Use civil-thesis-body-writing to identify which sentence each source supports and grade it as strong, partial, background, or not recommended.` |
+| Translate and explain a source | `Use civil-thesis-body-writing to translate this passage with its actual source and read coverage. Preserve negation, value mappings and conditions; separate faithful translation, your interpretation and supported manuscript use.` |
+| Check experiment, FE or ML reporting | `Use civil-thesis-body-writing to check the evidence chain, sample units, calibration/validation, data split and metric definitions in these Methods and Results. Revise wording only; do not start experiments or computations.` |
+| Audit equations and displays | `Use civil-thesis-body-writing to check formula provenance, symbols, units, assumptions and domain, plus display data, transformations, uncertainty and prose agreement. Separate scientific and formatting checks; do not guess unresolved facts.` |
+| Recompute table values | `Use civil-thesis-body-writing to check declared CSV means, relative changes, regression errors and group overlap read-only. Establish column/metric mappings first, preserve raw data and report actual checks.` |
+| Synchronize summaries and reply quotes | `Use civil-thesis-body-writing to trace this result change through affected body text, figures/tables, abstract, conclusion and reviewer reply. Distinguish proposed from verified file edits and do not invent page references.` |
 | Create, convert, or safely revise Word | `Use civil-thesis-body-writing for this Word task. First classify it as creation, Markdown conversion, or existing-DOCX revision; then follow the institution/journal template and validate equations, numbering, fields, and compatibility.` |
 | Organize InstSci/Zotero results | `Use civil-thesis-body-writing to organize these search results and show a deduplicated Zotero import preview before writing to the library.` |
 | Polish for a target journal | `Use civil-thesis-body-writing to research the target journal and comparable papers, report structural and depth differences, and then propose a full-manuscript revision plan.` |
@@ -44,12 +55,17 @@
 
 ```mermaid
 flowchart TD
-    A[Manuscript text, figures, equations, and literature] --> B[Evidence bank and terminology ledger]
-    B --> C[Manuscript and section routing]
-    C --> D[Draft, revise, cite, or edit DOCX]
-    D --> E[Specificity, evidence, and boundary checks]
-    E --> F[Revised prose, citation bank, or new DOCX file]
+    A[Manuscript, data, displays, equations and literature] --> B[Source anchors, evidence bank and terminology ledger]
+    B --> C[Load rules by genre, section and task]
+    C --> D[Draft, translate, polish, cite or revise documents]
+    D --> E[Scientific, numeric and cross-section checks]
+    E --> F[Prose, translation, findings or file delivery]
+    D -. When needed and authorized .-> G[Specialist plotting, computation and document tools]
+    G --> H[Inspect actual artifacts, native objects and rendering]
+    H --> F
 ```
+
+Small edits load only relevant rules, not the entire workflow. The read-only helper recomputes explicitly mapped CSV checks. Plotting, symbolic/statistical computation, FE execution and Word/PDF rendering use available specialist tools; unperformed steps are not passes.
 
 ## Capabilities
 
@@ -153,6 +169,9 @@ Use civil-thesis-body-writing to check this civil-engineering paragraph for vagu
 - External literature supports background, method provenance, mechanism interpretation, and comparison; it does not replace the author's results.
 - Zotero metadata, abstracts, and download status are not sufficient sentence-level citation evidence.
 - Design values, resistance claims, and code-related conclusions must retain their loading conditions, parameter ranges, and standard basis.
+- Formula provenance, symbols, dimensions, mathematics and mechanical assumptions are checked separately. Dimensional consistency or a successful substitution does not establish model validity or design suitability.
+- Quantitative displays must trace to actual data and processing. Generated conceptual illustrations cannot masquerade as test photographs, FE solutions, measured curves or statistical evidence.
+- The numeric helper checks only declared CSV operations and group relationships. It does not understand a manuscript automatically, fill missing data, or prove complete freedom from leakage.
 - DOCX work first selects creation, conversion, or revision; institution/journal templates override generic defaults, existing files are preserved by default, and formulas, fields, comments, tracked changes, and numbering are checked as Word objects.
 - Minimal cleanup does not authorize structural rewriting; regular polishing does not authorize new facts. Check both literal values and their mappings to models, metrics, conditions, and citation-supported claims.
 - Anti-defensive writing does not mean deleting negative results. Preserve material adverse findings, modeling assumptions, applicability conditions, and genuine uncertainty; do not add a generic limitations paragraph by default.
