@@ -25,6 +25,11 @@ At minimum, review the following ordinary workflows after major changes:
 8. Thesis subsection revision that removes chapter-role meta-discourse from the body.
 9. Single-section DOCX revision with visual QA limited to the changed section pages.
 10. Author-confirmed HFUT figure/table/equation objects preserve the calibrated OOXML container structure and bilingual labels.
+11. Scientific reporting distinguishes independent specimens/measurements, FE calibration/validation and ML grouping/preprocessing leakage.
+12. Formula transcription, mathematics/units, mechanical assumptions, native-object structure and rendering are checked separately.
+13. Quantitative tables/plots reconcile with mapped source data, including missingness, signed bias, percentages, uncertainty and transforms.
+14. Changed results propagate to affected abstract/conclusion/captions/reply quotations without claiming unseen files were checked.
+15. Metadata lookup failures and overlapping error bars do not become unsupported scientific verdicts.
 
 Use [forward-test-scenarios.md](forward-test-scenarios.md) for reusable fresh-context prompts. Use [public-usage-recipes.md](../examples/public-usage-recipes.md) for human-facing prompt templates. Record public-safe outcomes in [real-task-regression-results.md](real-task-regression-results.md).
 
@@ -58,3 +63,4 @@ Generic placeholders such as `[docx 路径]`, `[DOI/title list]`, `YOUR_ELSEVIER
 - Add new public references to `references/index.md`.
 - Record architecture or distribution changes in `references/meta/update-log.md`.
 - Prefer focused reference files over growing the root `SKILL.md`.
+- Use [systematic-integration-map.md](systematic-integration-map.md) for lifecycle/source coverage. Record structural, numeric, behavioral, rendered and native-client checks separately, including unperformed ones; a scenario definition is not a passed behavioral test.

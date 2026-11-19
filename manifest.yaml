@@ -68,9 +68,16 @@ references:
   nature_figure_cooperation: references/workflows/nature-figure-cooperation.md
   reviewer_driven_revision: references/workflows/reviewer-driven-revision.md
   agent_compatibility: references/workflows/agent-compatibility.md
+  literature_translation_grounding: references/workflows/literature-translation-grounding.md
+  research_integrity: references/workflows/research-integrity-and-reproducibility.md
+  object_integrity: references/workflows/equation-figure-table-integrity.md
+  manuscript_consistency: references/workflows/manuscript-consistency-and-delivery.md
+  systematic_integration: references/meta/systematic-integration-map.md
+  numeric_audit: scripts/audit_numeric_consistency.py
   on_demand_root: references/
 
 validation:
+  - scripts/test_numeric_consistency.py
   - scripts/test_agent_install.py
   - scripts/validate_manifest.py
   - scripts/validate_skill_contracts.py

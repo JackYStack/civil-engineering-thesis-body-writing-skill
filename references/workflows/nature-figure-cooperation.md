@@ -13,6 +13,8 @@ Use this workflow when a civil-engineering thesis or paper needs a figure plan, 
 
 Do not copy `nature-figure` plotting APIs or backend rules into this skill. Load and follow that skill at execution time so its current contract remains authoritative.
 
+Apply [equation-figure-table-integrity.md](equation-figure-table-integrity.md) to source identity, transforms, uncertainty and data/prose agreement. This scientific/numeric check remains usable without the plotting companion; execution does not.
+
 ## Figure brief
 
 Before invoking a plotting backend, create the following manuscript-facing brief:
@@ -34,6 +36,8 @@ Provisional panel map:
   c:
 Colour/marker ledger:
 Statistics and uncertainty needed:
+Filtering, normalization, fitting/interpolation and other transforms:
+Image/run provenance and processing, if applicable:
 Caption facts and terminology:
 Reviewer risk:
 Missing evidence or author decisions:
@@ -87,10 +91,13 @@ Final dimensions:
 Backend used:
 Statistics/legend notes:
 QA report:
+Source-preflight, panel alignment, collisions, uncertainty/transform checks actually run:
 Known blockers:
 ```
 
 Do not report SVG/PDF/TIFF/PNG outputs, editable text, final dimensions, or QA as complete unless the files were generated and inspected. Planning-only tasks should explicitly say `not generated` for artifact fields.
+
+Recent companion versions add automated source preflight, panel-alignment and rendered-collision checks. Inspect the installed version and actual script interface before invoking them. Request receipts/findings where supported; do not invent flags, copy Nature typography into a thesis, or mark a missing older-version check as passed. Final-size visual review and data/claim review remain distinct from automation.
 
 ## Manuscript reintegration
 

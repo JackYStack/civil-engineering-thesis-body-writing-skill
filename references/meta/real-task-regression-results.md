@@ -1,5 +1,21 @@
 # Real Task Regression Results
 
+## 2026-11-19: Systematic integration forward checks
+
+One fresh-context executor completed five synthetic user requests using the skill and raw supplied inputs, without being given expected answers or access to the scenario/result/map files. The main executor inspected the returned answers and actual numeric report; this was not five independent reviewers, a blind A/B comparison, or a measure of general accuracy.
+
+Observed outcomes:
+
+- Experimental/FE reporting distinguished repeated measurements from specimen count, calibration from independent validation, and a reported peak discrepancy from unmeasured full-curve/failure accuracy.
+- A real read-only helper invocation found an incorrect mean, signed-bias claim and cross-partition group overlap. The main executor reran the archived spec and reproduced the findings. The negative-input report was `FAIL` with exit code 1 and no runtime errors, as intended; source bytes were preserved.
+- Excerpt translation retained the negative failure statement, limited loading regime, metric identity and modality; synthetic source material was not passed off as a published citation.
+- An incomplete loading/formula note was not promoted to a universal design expression merely because dimensions were consistent; unreadable or unavailable source notation was not guessed.
+- Missing current manuscript/reply files and rendering were reported as unavailable. Error-bar overlap and a metadata lookup miss were not treated as scientific equivalence or a false-reference verdict.
+
+Separately, 33 numeric/input/read-only tests, 17 isolated adapter tests and 42 distribution mutation tests passed, along with the skill's structural validators. Scenario-file validation only checked definitions (23 pressure, 13 forward), not execution of every scenario.
+
+Limitations: small purposive synthetic set, one model executor, main-agent review, no sampled population or superiority estimate. No real-paper full translation, equation-derivation certification, FE/ML rerun, production plot export, final Word/PDF render, Zotero write or native-client discovery test was performed. These outcomes cannot be borrowed from upstream packages or inferred from passing structural checks. Private input locations and raw working artifacts are not part of the public package.
+
 ## 2026-11-18: Academic prose cleanup comparison
 
 This public-safe summary records an exploratory comparison, not a claim of improved writing quality. The private corpus, source paths, manuscript excerpts, rule snapshots, and raw model outputs are not distributed with this skill.

@@ -61,6 +61,10 @@ REQUIRED_AXES = {
 }
 
 REQUIRED_REFERENCES = [
+    "references/workflows/research-integrity-and-reproducibility.md",
+    "references/workflows/equation-figure-table-integrity.md",
+    "references/workflows/manuscript-consistency-and-delivery.md",
+    "references/meta/systematic-integration-map.md",
     "references/index.md",
     "references/meta/task-mode-manifest.md",
     "references/meta/output-contracts.md",
@@ -78,6 +82,7 @@ REQUIRED_REFERENCES = [
 ]
 
 REQUIRED_VALIDATORS = [
+    "scripts/test_numeric_consistency.py",
     "scripts/validate_manifest.py",
     "scripts/validate_skill_contracts.py",
     "scripts/validate_pressure_tests.py",

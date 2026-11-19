@@ -106,7 +106,7 @@ Discussion is not repeated results and not a literature review. It should explai
 
 Do not write only `the results are consistent with previous studies`. State which studies, which result, which indicator, and whether differences exist.
 
-Keep negative-result and limitations commentary in the evidence bank or revision notes rather than ordinary Discussion prose. State the conditions and metric of the positive finding directly; narrow the claim when the evidence does not support a broader one.
+Keep unrelated self-critique and generic warnings in working notes. Retain adverse findings, assumptions and scope conditions that materially affect the claim in the relevant Discussion/Methods passage. State the object, conditions and metric directly; narrow unsupported claims rather than hiding contrary evidence. A separate limitations section is not required.
 
 ### Conclusion
 

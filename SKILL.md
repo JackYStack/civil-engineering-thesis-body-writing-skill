@@ -39,7 +39,7 @@ For a short paragraph polish or one-sentence rewrite, the lightweight path is al
 - Keep gratuitous self-critique and generic disclaimers in working notes, not ordinary body prose. Retain material contrary findings, necessary assumptions, and conditions affecting interpretation in the relevant passage; anti-defensive writing must not suppress scientific disclosure. Bound claims by tested objects, conditions, metrics, and evidence.
 - Do not use external literature to replace the user's own results. For the user's test, FE, ML, GUI, formula, or chapter-result claims, cite the user's figures, tables, formulas, data, and section evidence first.
 - Use local-first citation support: user-provided references, current draft citations, Zotero/library full text, local notes, and project files before web or publisher search.
-- Metadata discovery is not full-text support. Title similarity, abstracts, InstSci retrieval status, or Zotero records do not by themselves support sentence-level claims.
+- Metadata discovery is not full-text support. For translated literature discussion, read `references/workflows/literature-translation-grounding.md`; keep source, faithful translation, and interpretation distinct.
 - When using external tools or databases, record source, query, access status, and support boundary. Protect credentials and access tokens.
 - For `.docx` work, first classify the branch as `create`, `convert`, or `revise`. Use `references/workflows/docx-creation-and-formatting.md` for new/Markdown-derived documents and formatting contracts; use `references/workflows/docx-ooxml-editing.md` for targeted edits to existing files. Preserve the original by default.
 - For the author-confirmed HFUT thesis Word project, load `references/style/hfut-thesis-word-objects.md` before creating or auditing bilingual figure captions, bilingual table captions, three-line tables, or numbered equations; do not substitute generic Word layouts for the calibrated object structure.
@@ -48,8 +48,9 @@ For a short paragraph polish or one-sentence rewrite, the lightweight path is al
 - For thesis format/readiness audits, use `references/workflows/thesis-format-audit.md`; calibrate rules against the controlling template, keep structured reports authoritative, and treat skipped checks as unavailable rather than passed.
 - For thesis or journal figure colour selection/audits, use `references/style/scientific-figure-color.md`; map colour to variable semantics, preserve a manuscript-level colour ledger, and verify colour-vision, grayscale, final-size, and target-journal constraints.
 - For publication-figure planning or execution, use `references/workflows/nature-figure-cooperation.md`: this skill owns the manuscript-facing figure brief and reintegration, while `nature-figure` owns backend selection, plotting, rendering, export, and visual QA.
+- For methods/results or scientific audits, load `references/workflows/research-integrity-and-reproducibility.md`; for equations or quantitative displays/derived claims, load `references/workflows/equation-figure-table-integrity.md`. Apply without waiting for the user to name the risk. For changed shared results, cross-section checks or final packages, use `references/workflows/manuscript-consistency-and-delivery.md`. A formatting pass is not scientific validation.
 
-For reviewer-driven manuscript revision, read `references/workflows/reviewer-driven-revision.md`. Use the existing paper/thesis mode with `revise`, or `docx-revision` for file edits. This branch preserves the author's prose while addressing the actual comment; `nature-response`, when available and needed, handles reply-letter assembly. Necessary assumptions, material contrary evidence, and reviewer-requested technical boundaries must remain visible even when removing generic defensive commentary.
+For reviewer-driven work read `references/workflows/reviewer-driven-revision.md`. Use the existing thesis/paper + `revise` route, or `docx-revision` for files. Preserve author voice and necessary disclosure; `nature-response` is optional for reply packages.
 
 ## Ask Before Acting
 
@@ -81,20 +82,14 @@ If the section, evidence, and intended claim are clear, proceed directly.
 
 ## Writing Procedure
 
-1. Reverse-outline the unit: assign each paragraph one job.
-2. Build the evidence bank: source files, figures, tables, formulas, data, model outputs, references, and boundaries.
-3. Build or refresh the terminology ledger for multi-section, bilingual, formula-heavy, GUI/code-linked, SCI, thesis-to-paper, or Word tasks.
-4. Establish the reader-question sequence for substantial sections or manuscripts.
-5. For introductions, literature reviews, methods, results/discussion, and SCI tasks, use the `phenomenon -> mechanism -> condition` planning frame.
-6. Scan citation needs and grade citation support when external claims are present.
-7. Draft or revise the prose using civil-engineering evidence language.
-8. Run anti-vague language QC: remove unsupported words such as "significant", "effective", "important", "good agreement", and "high value" unless the sentence supplies evidence and boundary.
-9. Run the body-prose meta-discourse gate: move chapter-task comparison, anti-duplication defense, and reviewer-facing structural explanation out of the thesis body.
-10. Run the body-prose disclaimer gate: remove generic warnings and editorial self-defense, not qualifications needed to understand or reproduce the results.
-11. For manuscript-level argument, use `references/architecture/evidence-led-narrative-and-defensive-writing.md`: organize around the strongest supported contribution and each experiment's role, without suppressing material contrary evidence. Do not add a generic limitations paragraph by default.
-12. Close with risks, missing evidence, or next step only when they matter, and place them outside the thesis body.
+1. Reverse-outline the unit and, for substantial work, establish reader questions and a `phenomenon -> mechanism -> condition` argument.
+2. Reuse the evidence bank and terminology ledger; link claims to user data, model outputs, objects and actual source passages. Distinguish planned, reported, checked and disputed evidence.
+3. Load the relevant integrity guides above; check scientific meaning and numeric/object mappings before prose. Grade citation support for external claims.
+4. Draft/revise in the selected civil-engineering style. For major argument use `references/architecture/evidence-led-narrative-and-defensive-writing.md`; retain material contrary evidence and necessary conditions.
+5. Run anti-vague language QC, the body-prose meta-discourse gate and disclaimer gate: remove unsupported praise, planning commentary and generic self-defense, not scientific disclosure.
+6. Check affected cross-references, abstract/conclusion and delivery artifacts. Report actual validation and material unresolved items separately from ready-to-use prose; do not move necessary technical conditions out of the body.
 
-For language polishing, final-text cleanup, or drafting with formulaic prose, load `references/style/academic-prose-cleanup.md`. Select cleanup, polish, or draft intensity within the existing operation; preserve data-to-object and citation-to-claim mappings, genuine uncertainty, author voice, and authorized scope. Its disclosure safeguards clarify older broad anti-defensive wording. This is editing for quality, not detector-score optimization.
+For language cleanup/polish load `references/style/academic-prose-cleanup.md`. Preserve terms, data/object and citation/claim mappings, author voice, genuine uncertainty and editing scope. Select intensity within existing operations; do not optimize detector scores.
 
 ## Source-Specific Rules
 
@@ -124,3 +119,4 @@ For file edits, report the new file path, validation run, and unresolved risks. 
 - Keep this router concise. Move detailed rules to `static/`, `references/`, or deterministic `scripts/`.
 - Record architecture changes in `references/meta/update-log.md`.
 - Record materially consulted external skills, source links, reviewed revisions, retained ideas, and migration boundaries in `references/meta/external-skill-sources.md`.
+- Use `references/meta/systematic-integration-map.md` to review lifecycle impact, source dependencies, exclusions and observable checks before adding another isolated rule.

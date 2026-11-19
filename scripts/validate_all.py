@@ -19,6 +19,7 @@ def main() -> int:
     python = sys.executable
 
     validators: list[tuple[str, list[str]]] = [
+        ("numeric-consistency-invariants", [python, "-B", "-X", "utf8", str(root / "scripts/test_numeric_consistency.py")]),
         ("agent-install", [python, "-X", "utf8", str(root / "scripts/test_agent_install.py")]),
         ("manifest", [python, "-X", "utf8", str(root / "scripts/validate_manifest.py"), str(root)]),
         ("contracts", [python, "-X", "utf8", str(root / "scripts/validate_skill_contracts.py"), str(root)]),

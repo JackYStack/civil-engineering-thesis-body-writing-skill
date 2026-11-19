@@ -27,6 +27,10 @@ Use this index to find the right reference file. The structure follows the natur
 | File | Use When |
 |---|---|
 | [workflows/agent-compatibility.md](workflows/agent-compatibility.md) | Installing or using the shared skill on Claude Code or WorkBuddy; resolving missing tool/MCP/companion-skill capabilities without claiming unsupported actions. |
+| [workflows/research-integrity-and-reproducibility.md](workflows/research-integrity-and-reproducibility.md) | Evidence lineage, literature/standards, experiment, FE, ML, statistical units/uncertainty, and scientific rather than merely formatting audits. |
+| [workflows/equation-figure-table-integrity.md](workflows/equation-figure-table-integrity.md) | Formula provenance/validity, quantitative displays, native objects, and bounded numeric CSV checks; separate science, numbers, structure and rendering. |
+| [workflows/manuscript-consistency-and-delivery.md](workflows/manuscript-consistency-and-delivery.md) | Cross-section claim consistency, changed-result propagation, reviewer-package coupling, applicable declarations and final artifacts. |
+| [workflows/literature-translation-grounding.md](workflows/literature-translation-grounding.md) | Translating and explaining source passages during body-writing discussions; protecting meaning, source anchors, scope, and the distinction between author findings and assistant inference. |
 | [workflows/reviewer-driven-revision.md](workflows/reviewer-driven-revision.md) | Revising body text against reviewer comments, preserving author style, and mapping actual edits to reply evidence. |
 | [workflows/citation-workflow.md](workflows/citation-workflow.md) | Compatibility entry for the split local-first citation workflow; start here when old instructions point to the former merged guide. |
 | [workflows/citation/index.md](workflows/citation/index.md) | Split citation workflow map for local-first search, support grading, output tables, and PCSP-specific citation directions. |
@@ -79,4 +83,5 @@ Use this index to find the right reference file. The structure follows the natur
 | [meta/real-task-regression-results.md](meta/real-task-regression-results.md) | Reviewing the latest public-safe real-task regression summary before major repository updates. |
 | [meta/router-compression-map.md](meta/router-compression-map.md) | Auditing how the former long `SKILL.md` was compressed into the concise router entry. |
 | [meta/external-skill-sources.md](meta/external-skill-sources.md) | Tracing external skill repositories, reviewed revisions, retained ideas, licenses, internal destinations, and explicit migration boundaries. |
+| [meta/systematic-integration-map.md](meta/systematic-integration-map.md) | Lifecycle coverage, pinned source review depth, adoption/cooperation/exclusion decisions, dependency boundaries and maintenance acceptance. |
 | [meta/update-log.md](meta/update-log.md) | Reviewing the evolution, migration history, validation notes, and packaging status of this skill. |

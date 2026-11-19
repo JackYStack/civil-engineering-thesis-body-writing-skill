@@ -42,3 +42,5 @@ Before inserting a citation or writing a literature-supported claim from extract
 
 If confidence is low, write the point as `待核全文` or place it under `需补充或确认` instead of treating it as citation support.
 
+For translating or explaining the extracted passage to the user, also use [literature-translation-grounding.md](literature-translation-grounding.md). Keep uncertain negation, values, and subscripts unresolved until checked against the source; do not let fluent translation mask an extraction error.
+

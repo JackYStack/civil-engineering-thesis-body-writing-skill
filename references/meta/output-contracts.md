@@ -11,12 +11,15 @@ Prefer the smallest contract that completes the task. Do not paste every possibl
 - Put unresolved evidence, weak citations, missing standards, Word risks, or author decisions under a clearly labelled risk/confirmation section.
 - Do not mix final reference numbering with temporary markers unless the user provides an existing numbering system.
 - For file-producing work, report output path and validation performed.
+- For formula/data/object work use [equation-figure-table-integrity.md](../workflows/equation-figure-table-integrity.md). Report scientific/source, numeric, native-object and visual checks separately. For shared-result changes and final packages apply [manuscript-consistency-and-delivery.md](../workflows/manuscript-consistency-and-delivery.md); no generated artifact or skipped check may be described as verified.
 
 ## Reviewer-driven local revision
 
 For a single review comment or local amendment, use this smaller contract instead of a full paper-rebuilding package: give the insertion/replacement location with a searchable original-text anchor, the ready-to-paste passage in the manuscript language, and a brief explanation of the actual change. Include unresolved evidence only when material. Provide old/new snippets when requested or useful for proofreading. Distinguish proposed text, author-reported completion, and edits verified in the current file. Add the reply text only when requested; use `nature-response` if available for a full response package. Do not invent line numbers before rendering the current manuscript.
 
 ## Contracts by Mode
+
+For a local discussion that translates or explains literature, the compact contract is: actual source/locator and read scope, a faithful excerpt translation or labelled paraphrase, separate interpretation, and supported use for the manuscript. Use `references/workflows/literature-translation-grounding.md`. Do not force a full reader bundle or citation table for a one-point question; do not invent location or full-text access.
 
 ### `thesis-body`
 
@@ -109,6 +112,8 @@ Never hide Zotero write operations.
 ### `thesis-audit`
 
 Required:
+
+Choose scope first: for scientific/content review use the research-integrity guide and a scientific issue ledger; do not force format-rule calibration or claim final readiness from a narrow audit. The following full format/final-readiness contract applies only when requested.
 
 1. `审查依据与范围`
 2. `Readiness Gate`

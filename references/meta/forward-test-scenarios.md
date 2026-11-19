@@ -4,6 +4,8 @@ Use these scenarios after router, reference, workflow, or output-contract change
 
 These tests complement [pressure-test-scenarios.md](pressure-test-scenarios.md). Pressure tests check failure modes. Forward tests check whether ordinary user tasks still route to the right mode, load the right focused references, and produce a useful deliverable without drifting into unrelated branches.
 
+Give an independent executor only the prompt and raw input artifacts, not the expected references or assertions below. This file validates scenario definitions, not execution success.
+
 ## Scenario: Anti-Vague Thesis Sentence Polish
 
 Mode: `thesis-body`
@@ -165,3 +167,75 @@ Must do: Use the 2-row × 1-column figure wrapper with both caption paragraphs i
 Must not: Generalize the project convention to every HFUT template; create a third figure-caption row; wrap table captions around the data table; use `Table` or a 0.75 pt header rule; number equations with a three-column table or manual spacing.
 
 Validation prompt: "按照已确认的合肥工业大学参考Word真实结构，建立图3.1、表3.1和式（3.1），并检查对象结构与该小节渲染页。"
+
+## Scenario: Scientific Reporting Without New Experiments
+
+Mode: `thesis-body`
+
+Trigger: A user asks to rewrite an experiment/FE result paragraph using existing data only.
+
+Expected axes: matching experiment/FE section, `user-materials`, `revise`.
+
+Expected references: `workflows/research-integrity-and-reproducibility.md` and relevant local style.
+
+Expected output contract: revised passage and material definition/evidence questions, not an invented experiment plan.
+
+Must do: Distinguish specimen and measurement counts, calibration and independent validation, observed and omitted failure mechanisms.
+
+Must not: Inflate independent n, erase adverse evidence, or launch FE runs because writing was authorized.
+
+Validation prompt: "只有六块试件，每块四测点十级加载。同一组试件用于标定和对比，峰值误差3%。润色方法和结果，不增加试验。"
+
+## Scenario: Numeric Table And Prose Reconciliation
+
+Mode: `thesis-audit`
+
+Trigger: The user supplies a result CSV and a summary table/prose with explicit calculation definitions.
+
+Expected axes: `results-discussion`, `user-materials`, `audit`.
+
+Expected references: `workflows/equation-figure-table-integrity.md`, then the bounded helper if applicable.
+
+Expected output contract: observed arithmetic findings, inputs/definitions/tolerance and supported replacement wording.
+
+Must do: Recompute using mapped cells, keep missing distinct from zero and ratios distinct from percent/percentage points; preserve source files.
+
+Must not: Treat all error metrics as interchangeable or a numeric pass as a scientific/visual pass.
+
+Validation prompt: "按给定CSV只读复核表格均值、相对基准的提高率和MBE，给结果表述；不改原始数据。"
+
+## Scenario: Formula Fidelity And Scientific Validity
+
+Mode: `thesis-body`
+
+Trigger: A user asks to use or translate a formula with ambiguous transcription, units or loading convention.
+
+Expected axes: `method` or `model-application`, supplied source, `revise` or `audit`.
+
+Expected references: `workflows/equation-figure-table-integrity.md`; translation-grounding when needed.
+
+Expected output contract: usable verified portions, identified assumptions/ambiguity, and actual checks rather than a claimed native object.
+
+Must do: Separate faithful transcription, algebra, dimensions, numerical substitution, mechanical assumptions and rendering.
+
+Must not: Guess unreadable subscripts, silently correct a source, or infer engineering validity from dimensional consistency.
+
+Validation prompt: "检查挠度公式里P到底是总荷载还是单点荷载；现有截图下标不清，只有量纲检查通过，能直接作为通用设计公式吗？"
+
+## Scenario: Shared Result Change And Final Delivery
+
+Mode: `docx-revision`
+
+Trigger: A changed result must propagate to a manuscript and revision reply, with some render/runtime capability unavailable.
+
+Expected axes: relevant sections, `user-materials`, `docx-edit` or `audit` as authorized.
+
+Expected references: `workflows/manuscript-consistency-and-delivery.md`, reviewer and DOCX workflows where applicable.
+
+Expected output contract: affected artifact list, bounded edits if authorized, actual validation layers and remaining blockers.
+
+Must do: Synchronize result/caption/abstract/conclusion/reply as affected and recheck rendered locations when possible.
+
+Must not: Claim a missing renderer passed, fabricate author declarations or assert final readiness from a narrow check.
+
+Validation prompt: "结果表更新后，请核对摘要、结论及回复引用；当前没有Word渲染环境，先只读审查，不生成最终稿。"

@@ -152,7 +152,7 @@ Use:
 
 Discussion should not repeat every figure. It should explain the supported mechanism, relevant comparison, and meaning under the tested conditions.
 
-Keep negative-result and limitations commentary in working notes instead of inserting it into ordinary Discussion prose.
+Keep unrelated self-critique in working notes. State material adverse findings, assumptions and applicability conditions where needed in Methods/Discussion; do not suppress them or require a separate limitations section. Avoid a generic defensive closing paragraph.
 
 ### Conclusion
 

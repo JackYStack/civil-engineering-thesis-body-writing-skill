@@ -4,6 +4,8 @@ Use this reference when drafting or revising from mixed materials: Word/docx fil
 
 The goal is to keep the manuscript evidence-led and prevent invented data, unsupported claims, or accidental loss of original results during revision.
 
+For substantial scientific reporting, use [research-integrity-and-reproducibility.md](../workflows/research-integrity-and-reproducibility.md). Extend this same ledger with source version/locator, planned/reported/checked/disputed status, processing lineage and verification receipt as needed; do not create a competing ledger. Hashes identify artifacts, not scientific validity. Use the object-integrity guide for calculations/displays and the consistency/delivery guide for changed-result propagation.
+
 ## Source Inventory
 
 Before major writing or formal Word revision, list the available materials:

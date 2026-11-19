@@ -9,6 +9,12 @@ from pathlib import Path
 
 
 REQUIRED_FILES = [
+    "references/workflows/research-integrity-and-reproducibility.md",
+    "references/workflows/equation-figure-table-integrity.md",
+    "references/workflows/manuscript-consistency-and-delivery.md",
+    "references/meta/systematic-integration-map.md",
+    "scripts/audit_numeric_consistency.py",
+    "scripts/test_numeric_consistency.py",
     "SKILL.md",
     "references/index.md",
     "references/meta/task-mode-manifest.md",
@@ -36,6 +42,10 @@ REQUIRED_MODES = [
 ]
 
 SKILL_REQUIRED_LINKS = [
+    "references/workflows/research-integrity-and-reproducibility.md",
+    "references/workflows/equation-figure-table-integrity.md",
+    "references/workflows/manuscript-consistency-and-delivery.md",
+    "references/meta/systematic-integration-map.md",
     "references/meta/task-mode-manifest.md",
     "references/meta/output-contracts.md",
     "references/workflows/docx-creation-and-formatting.md",
@@ -46,6 +56,10 @@ SKILL_REQUIRED_LINKS = [
 ]
 
 INDEX_REQUIRED_LINKS = [
+    "workflows/research-integrity-and-reproducibility.md",
+    "workflows/equation-figure-table-integrity.md",
+    "workflows/manuscript-consistency-and-delivery.md",
+    "meta/systematic-integration-map.md",
     "meta/task-mode-manifest.md",
     "meta/output-contracts.md",
     "meta/external-skill-sources.md",

@@ -14,6 +14,12 @@ Before inserting a citation, answer:
 
 If these questions cannot be answered, do not cite the source in the draft.
 
+## Bibliographic identity is a separate check
+
+Compare author identity/order, title, DOI, journal, article version/year, volume/issue and pages/article number against available authoritative records. Record field conflicts and provenance rather than silently preferring one database. Online-first and issue dates can legitimately differ; digits embedded in a DOI do not establish its publication year.
+
+A Crossref 404 or failed lookup is not proof a DOI is false: coverage, another registration agency, availability or query problems may be involved. Check the DOI resolver, publisher or relevant registry as available and report unresolved status. A resolving DOI that identifies a different paper is an identity mismatch, not support for the requested paper. Formatted `et al.` truncation is not itself proof that source metadata omit authors; distinguish bibliography style from the full author record. No lookup success establishes claim support without inspecting content.
+
 ## Support Grades
 
 | Grade | Meaning | Use |

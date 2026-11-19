@@ -22,6 +22,8 @@ For a short paragraph with a few citation needs:
 
 For PCSP or sandwich-panel work, add [pcsp-directions.md](pcsp-directions.md) before choosing final citations.
 
+When translating or explaining a source passage for the user, including an informal discussion before drafting, apply [literature-translation-grounding.md](../literature-translation-grounding.md). A local explanation need not become a full-paper reader; it still requires faithful meaning, actual source/coverage, and separate interpretation.
+
 ## Citation Need Scan
 
 Usually needs citations:

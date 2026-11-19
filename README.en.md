@@ -61,6 +61,10 @@ flowchart TD
 | Reviewer-driven local revision | Insertion/replacement anchors, revised passages, and reply-handoff information | Preserve sound original text; distinguish proposals from implemented edits; cooperate with `nature-response` for reply-package assembly only when needed |
 | Contribution-led, non-defensive writing | Evidence-led central claim, experiment roles, and section argument | Remove rhetorical self-defense, not necessary disclosure; do not turn a local advantage into universal superiority |
 | Citation support | Temporary markers, candidate list, and support grades | Search hits and title similarity are not full-text support |
+| Grounded reading and bilingual translation | Located translations, separate interpretation, and bounded manuscript use | Applies during discussion too; preserve negation, value mappings and conditions without inventing unseen full text |
+| Research and object integrity | Experiment/FE/ML reporting, formula provenance/domain, and quantitative-display checks | Scientific meaning, numbers, native objects and rendering are separate; correct layout/dimensions do not validate a model |
+| Read-only numeric checks | Declared CSV aggregates, relative changes, regression errors and cross-split group overlap | Explicit mappings only; no automatic manuscript understanding, proof of leakage freedom, or raw-data modification |
+| Cross-section and delivery consistency | Linked abstract/conclusion/display and reviewer-package checks | Recheck affected artifacts after changes; declarations and access claims require actual evidence |
 | DOCX creation and revision | A new, converted, or structure-preserving document version | Template first; do not overwrite by default; validate native Word objects and rendering |
 | InstSci/Zotero | Retrieval organization, import preview, and duplicate checks | Confirm before library writes; access success is not citation support |
 | Target-journal polishing | Journal requirements, exemplar differences, and a revision blueprint | Research before rewriting; do not imitate exemplar wording |
@@ -68,6 +72,8 @@ flowchart TD
 | Scientific-figure cooperation | Figure brief, semantic colour mapping, nature-figure handoff, artifact QA, and manuscript reintegration | The writing skill does not bypass the Python/R gate or claim artifacts without data and inspected files |
 
 See the [academic prose cleanup guide](references/style/academic-prose-cleanup.md), [reviewer-driven revision workflow](references/workflows/reviewer-driven-revision.md), and [anti-defensive writing guide](references/architecture/evidence-led-narrative-and-defensive-writing.md). The three language-editing intensities operate within the existing draft/revise routes; they are not separately installed skills.
+
+See the [systematic integration map](references/meta/systematic-integration-map.md) for lifecycle coverage, source-review depth, adoption/cooperation/exclusion decisions and unmigrated features. Plotting, symbolic/statistical computation, FE execution and Word/PDF rendering remain task- and capability-gated; rule integration does not install or run those tools automatically.
 
 ## Installation
 
