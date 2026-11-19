@@ -26,6 +26,7 @@ Use this index to find the right reference file. The structure follows the natur
 
 | File | Use When |
 |---|---|
+| [workflows/agent-compatibility.md](workflows/agent-compatibility.md) | Installing or using the shared skill on Claude Code or WorkBuddy; resolving missing tool/MCP/companion-skill capabilities without claiming unsupported actions. |
 | [workflows/reviewer-driven-revision.md](workflows/reviewer-driven-revision.md) | Revising body text against reviewer comments, preserving author style, and mapping actual edits to reply evidence. |
 | [workflows/citation-workflow.md](workflows/citation-workflow.md) | Compatibility entry for the split local-first citation workflow; start here when old instructions point to the former merged guide. |
 | [workflows/citation/index.md](workflows/citation/index.md) | Split citation workflow map for local-first search, support grading, output tables, and PCSP-specific citation directions. |

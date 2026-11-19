@@ -16,7 +16,7 @@
   </p>
 </div>
 
-`civil-thesis-body-writing` 是面向土木工程学位论文与工程期刊稿件的 Codex skill。它将研究对象、数据、图表、公式和文献组织成有证据边界的正文，并支持学术表达清理、审稿意见驱动的局部修改、SCI 压缩、引用核查、DOCX 创建/转换/安全修改以及 InstSci/Zotero 文献流程。语言修改区分最小清理、常规润色和新稿写作，保留专业语气、作者风格与必要技术信息。
+`civil-thesis-body-writing` 是面向土木工程学位论文与工程期刊稿件的 Agent skill，以 Codex 为默认安装平台，并提供 Claude Code 安装和 WorkBuddy 项目安装/技能包导入适配。它将研究对象、数据、图表、公式和文献组织成有证据边界的正文，并支持学术表达清理、审稿意见驱动的局部修改、SCI 压缩、引用核查、DOCX 创建/转换/安全修改以及 InstSci/Zotero 文献流程。语言修改区分最小清理、常规润色和新稿写作，保留专业语气、作者风格与必要技术信息。
 
 > 它不会替你编造数据、公式、试验结果或参考文献，也不会把机器学习预测或 GUI 输出写成规范设计结论。
 
@@ -70,6 +70,20 @@ flowchart TD
 具体规则见[学术表达清理指南](references/style/academic-prose-cleanup.md)、[审稿局部修订流程](references/workflows/reviewer-driven-revision.md)和[反防御性写作指南](references/architecture/evidence-led-narrative-and-defensive-writing.md)。三种语言处理强度沿用现有起草/修订操作，不是额外安装的独立 skill。
 
 ## 安装
+
+### Claude Code 与 WorkBuddy
+
+以下命令在仓库根目录执行，需要 Python 3.10+；Codex 用户继续使用下方原有安装方式。
+
+```shell
+python -X utf8 scripts/install_agent.py install --agent claude-code --scope user
+python -X utf8 scripts/install_agent.py install --agent workbuddy --scope project --project-root "/path/to/project"
+python -X utf8 scripts/install_agent.py package --agent workbuddy --output "/path/to/output/civil-thesis-body-writing-workbuddy.zip"
+```
+
+Claude Code 安装后使用 `/civil-thesis-body-writing`。WorkBuddy 可在支持本地 `.codebuddy/` 配置的项目中使用，或通过技能页上传导出包并完成安全确认；不猜测全局目录，不自动部署到云端。已有安装默认不覆盖，确认更新后加 `--replace`，先备份再安装。
+
+三平台共享写作规则，不共享 MCP、权限、凭据或其他技能。缺少外部连接、Word/PDF 渲染或 `nature-figure` 等能力时，跳过对应动作并说明，不能用普通文字冒充已执行产物。安装/打包适配不代表客户端已经完成实际发现和调用。完整步骤与跳过清单见[Agent 适配指南](references/workflows/agent-compatibility.md)。
 
 ### 从仓库安装（推荐）
 

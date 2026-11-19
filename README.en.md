@@ -16,7 +16,7 @@
   </p>
 </div>
 
-`civil-thesis-body-writing` is a Codex skill for civil-engineering theses and engineering-journal manuscripts. It organizes research objects, data, figures, equations, and literature into evidence-bounded prose, with workflows for academic prose cleanup, reviewer-driven local revision, SCI compression, citation auditing, DOCX creation/conversion/safe revision, and InstSci/Zotero-assisted literature management. Language work distinguishes minimal cleanup, regular polishing, and drafting while preserving scholarly register, author voice, and necessary technical content.
+`civil-thesis-body-writing` is an Agent skill for civil-engineering theses and engineering-journal manuscripts, with Codex as its default installation target and adapters for Claude Code installation and WorkBuddy project installation/package import. It organizes research objects, data, figures, equations, and literature into evidence-bounded prose, with workflows for academic prose cleanup, reviewer-driven local revision, SCI compression, citation auditing, DOCX creation/conversion/safe revision, and InstSci/Zotero-assisted literature management. Language work distinguishes minimal cleanup, regular polishing, and drafting while preserving scholarly register, author voice, and necessary technical content.
 
 > It does not invent data, equations, experimental results, or references, and it does not present machine-learning predictions or GUI outputs as design-code conclusions.
 
@@ -70,6 +70,20 @@ flowchart TD
 See the [academic prose cleanup guide](references/style/academic-prose-cleanup.md), [reviewer-driven revision workflow](references/workflows/reviewer-driven-revision.md), and [anti-defensive writing guide](references/architecture/evidence-led-narrative-and-defensive-writing.md). The three language-editing intensities operate within the existing draft/revise routes; they are not separately installed skills.
 
 ## Installation
+
+### Claude Code and WorkBuddy
+
+Run these commands from the repository root with Python 3.10+. Codex users can continue using the existing installers below.
+
+```shell
+python -X utf8 scripts/install_agent.py install --agent claude-code --scope user
+python -X utf8 scripts/install_agent.py install --agent workbuddy --scope project --project-root "/path/to/project"
+python -X utf8 scripts/install_agent.py package --agent workbuddy --output "/path/to/output/civil-thesis-body-writing-workbuddy.zip"
+```
+
+Invoke `/civil-thesis-body-writing` in Claude Code. In WorkBuddy, use a project supporting local `.codebuddy/` configuration, or upload the exported package on the Skills page and complete its security review. The adapter does not guess a global directory or deploy to cloud libraries. Existing installations are refused by default; use `--replace` only after review to retain a backup before updating.
+
+The hosts share writing rules, not MCP connections, permissions, credentials, or companion skills. Missing external services, Word/PDF rendering, or `nature-figure` capabilities are skipped and reported, never simulated with prose. Installation/package compatibility does not establish successful discovery or execution inside the client. See the [agent compatibility guide](references/workflows/agent-compatibility.md) for the complete setup and capability matrix.
 
 ### Install from the repository (recommended)
 

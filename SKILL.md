@@ -5,7 +5,7 @@ description: Use when drafting, revising in response to peer review, citing, tra
 
 # Civil Thesis Body Writing
 
-This is a router-style entry for civil-engineering thesis and paper writing. Keep the entry light: load the core route, select the task branch, then open only the references needed for the user's concrete request.
+Shared writing rules for Codex, Claude Code, and WorkBuddy. Load only needed routes. On non-Codex hosts, read `references/workflows/agent-compatibility.md`; skip unavailable tool operations rather than simulate them.
 
 ## Mandatory Router
 

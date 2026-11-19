@@ -67,9 +67,11 @@ references:
   hfut_thesis_word_objects: references/style/hfut-thesis-word-objects.md
   nature_figure_cooperation: references/workflows/nature-figure-cooperation.md
   reviewer_driven_revision: references/workflows/reviewer-driven-revision.md
+  agent_compatibility: references/workflows/agent-compatibility.md
   on_demand_root: references/
 
 validation:
+  - scripts/test_agent_install.py
   - scripts/validate_manifest.py
   - scripts/validate_skill_contracts.py
   - scripts/validate_pressure_tests.py
