@@ -1,8 +1,8 @@
 # Phenomenon-Mechanism-Condition Writing Framework
 
-Use this guide when drafting or revising introductions, literature reviews, methods, results, discussions, conclusions, thesis-to-paper manuscripts, SCI papers, or any section that feels like a flat "gap list" or data report.
+Use this guide when drafting or revising introductions, literature reviews, methods, results, discussions, conclusions, independent journal papers, or any section that feels like a flat "gap list" or data report.
 
-The goal is to convert thesis/paper prose from:
+The goal is to improve reasoning within the existing manuscript genre, moving from:
 
 `background -> prior studies -> this paper does something`
 

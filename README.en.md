@@ -72,7 +72,7 @@ Small edits load only relevant rules, not the entire workflow. The read-only hel
 | Workflow | Direct deliverable | Governing boundary |
 | --- | --- | --- |
 | Thesis body writing | Chinese prose organized for the selected chapter task | User figures, equations, and data remain the primary evidence |
-| Paper/SCI writing | Abstract, introduction, results/discussion, conclusion, title, and highlights | Compress around one central question without expanding conclusions |
+| Independent journal/SCI writing | Drafting or polishing abstracts, introductions, results/discussion, conclusions, titles and highlights | No extraction, compression or reorganization of a thesis/chapter into a journal article |
 | Academic prose cleanup | Revised prose and notes at cleanup, polish, or draft intensity | No mechanical word bans or forced sentence variation; check numbers, terms, citations, and their semantic mappings |
 | Reviewer-driven local revision | Insertion/replacement anchors, revised passages, and reply-handoff information | Preserve sound original text; distinguish proposals from implemented edits; cooperate with `nature-response` for reply-package assembly only when needed |
 | Contribution-led, non-defensive writing | Evidence-led central claim, experiment roles, and section argument | Remove rhetorical self-defense, not necessary disclosure; do not turn a local advantage into universal superiority |
@@ -164,6 +164,8 @@ Use civil-thesis-body-writing to check this civil-engineering paragraph for vagu
 ```
 
 ## Evidence and Safety Boundaries
+
+- Thesis-to-journal conversion has been removed. Independent journal drafting/polishing, bilingual translation and Word-format conversion remain available; they do not automatically change manuscript genre.
 
 - Claims from the author's experiments, finite-element models, machine-learning models, and GUI should be supported first by the manuscript's own figures, equations, outputs, and parameter ranges.
 - External literature supports background, method provenance, mechanism interpretation, and comparison; it does not replace the author's results.

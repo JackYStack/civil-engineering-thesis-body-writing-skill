@@ -1,6 +1,6 @@
 # Reader Question Sequence
 
-Use this guide for full sections, full manuscripts, thesis-to-paper conversion, SCI drafts, formal `.docx` revisions, and any section that feels flat even when the facts are correct.
+Use this guide for full sections, full manuscripts, independent journal drafts, formal `.docx` revisions, and any section that feels flat even when the facts are correct.
 
 The goal is to make the manuscript answer the reader's questions in the order they naturally arise. This is adapted from nature-style article architecture, but calibrated for civil-engineering thesis and paper writing.
 

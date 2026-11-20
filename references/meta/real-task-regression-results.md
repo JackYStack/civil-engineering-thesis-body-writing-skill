@@ -31,6 +31,8 @@ Interpretation: no clear quality advantage or regression was detected on this sm
 
 ## Historical Phase 9 Regression
 
+Historical only: the former thesis-material-to-journal-abstract case below is retired as of 2026-11-20. It is not a currently supported route or a current passing test. Independent journal abstract revision remains supported.
+
 Date: 2026-07-14
 
 Purpose: record a public-safe Phase 9 regression pass after the Phase 8 router/distribution hardening. The checks use anonymized prompt shapes and existing public-safe scenario templates. They do not include private manuscripts, Zotero item keys, local paper titles, DOI lists, or unpublished data.

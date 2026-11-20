@@ -36,12 +36,12 @@ Expected route: `thesis-body`, `revise`, anti-vague language pass.
 
 ## Case: SCI Abstract Rewrite
 
-Use when the user wants to turn thesis-style Chinese material into a small-paper or SCI abstract.
+Use when the user wants to revise the abstract of an independent journal manuscript. This is not a thesis-to-journal conversion recipe.
 
 Prompt:
 
 ```text
-使用 civil-thesis-body-writing，将以下材料改写为工程期刊 SCI 摘要。
+使用 civil-thesis-body-writing，修改以下独立工程期刊稿件的摘要，保持研究问题和文稿类型不变。
 目标期刊/期刊族：[如 Engineering Structures / Structures / Journal of Building Engineering；没有则写“工程结构类期刊”]
 中心问题：[一句话]
 方法：[试验/有限元/机器学习/解析模型/混合方法]

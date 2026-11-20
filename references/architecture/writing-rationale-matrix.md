@@ -8,7 +8,7 @@ Use a writing rationale matrix for:
 
 - formal revision of a full `.docx`/Word manuscript;
 - abstract, introduction, conclusion, or research-status restructuring;
-- thesis-to-paper conversion;
+- independent journal manuscript revision;
 - Chinese-to-English submission draft logic rebuilding;
 - a section longer than about 800-1000 Chinese characters with multiple claims;
 - tasks where the user explicitly says `正式使用 skill`, `整节修改`, `整篇修改`, or `按论文逻辑重构`.
@@ -17,7 +17,7 @@ Do not require it for a short paragraph polish, terminology correction, or one-s
 
 ## Confirmation Gate Before Full Drafting
 
-For full sections, full manuscripts, thesis-to-paper conversion, target-journal polishing, or formal `.docx` revision, do not jump directly from "the text is weak" to a rewritten manuscript. First produce a compact confirmation gate unless the user has already provided an explicit plan.
+For full sections, full manuscripts, target-journal polishing, or formal `.docx` revision, do not jump directly from "the text is weak" to a rewritten manuscript. First produce a compact confirmation gate unless the user has already provided an explicit plan. This planning step does not authorize converting a thesis into an article.
 
 The gate should contain:
 
@@ -36,7 +36,7 @@ Choose the lightest level that still controls logic:
 
 - `light`: 3-5 rows for an abstract, short subsection, or application paragraph.
 - `standard`: 8-15 rows for one full section or paper-style body segment.
-- `full`: 20+ rows for a full manuscript, thesis-to-paper conversion, or formal Word revision.
+- `full`: 20+ rows for a full manuscript or formal Word revision.
 
 ## Required Table
 

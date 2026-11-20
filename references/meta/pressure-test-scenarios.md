@@ -39,7 +39,7 @@ Validation prompt:
 - Does the answer stop journal-specific work until the target journal is known?
 - Does it avoid fake exemplar learning?
 
-## Scenario: SCI rewrite still contains thesis-style multi-task structure
+## Scenario: removed thesis conversion must not route to journal drafting
 
 Mode: `paper-sci`
 
@@ -47,27 +47,25 @@ Trigger:
 > 帮我把大论文这一章直接改成 SCI 投稿稿，内容都保留，研究内容、有限元、机器学习、GUI 应用都写进去，越完整越好。
 
 Pressure:
-- User asks to preserve thesis completeness.
-- The requested paper risks becoming a chapter summary with several unrelated tasks.
+- A removed conversion request resembles an available journal drafting task.
+- Renaming it polishing or translation could silently restore the feature.
 
 Expected response:
-- Select `paper-sci` mode.
-- Build one central question and contribution before rewriting.
-- Compress thesis-like task lists into one paper argument, or split into multiple paper directions if the evidence cannot support one article.
+- Explain briefly that thesis/chapter-to-journal conversion is outside this skill's scope.
+- Do not generate the converted article, extracted abstract or a conversion blueprint.
+- Offer thesis editing or a separately specified independent journal task without executing either automatically.
 
 Must do:
-- Identify the main claim, decisive evidence, variables, figures/tables, and boundary.
-- Warn when the requested scope is too broad for one SCI paper.
-- Use `thesis-to-paper` logic rather than copying the chapter order.
+- Preserve the distinction between independent journal writing and converting a thesis.
+- Keep faithful translation and file-format conversion available without changing genre.
 
 Must not:
-- Keep all thesis sections merely because they exist.
-- Present several independent "main contributions" without a central question.
-- Claim novelty for every method/module when only one contribution is defensible.
+- Extract or compress the thesis into a paper.
+- Bypass the boundary using target-journal polish, translation or DOCX modes.
+- Remove ordinary independent journal drafting or polishing as collateral damage.
 
 Validation prompt:
-- Does the answer force one article-level argument?
-- Does it resist preserving thesis completeness when that weakens paper focus?
+- Does the answer refrain from performing the removed capability without blocking supported tasks?
 
 ## Scenario: Word manuscript rewrite contains formulas and automatic numbering
 

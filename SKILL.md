@@ -1,11 +1,13 @@
 ---
 name: civil-thesis-body-writing
-description: Use when drafting, revising in response to peer review, citing, translating, auditing, target-journal polishing, coordinating publication figures, or safely editing Chinese civil-engineering master's thesis body text, local paper/SCI manuscripts, Word/docx drafts, Zotero/InstSci-supported literature evidence, or thesis-to-paper materials, especially for 大论文, 小论文, SCI投稿稿, 章节正文, 试验研究, 有限元分析, 机器学习模型, 模型应用, 科研图表, and OOXML-safe revision.
+description: Use when drafting, revising in response to peer review, citing, translating, auditing, target-journal polishing, coordinating publication figures, or safely editing Chinese civil-engineering master's thesis body text, independent journal/SCI manuscripts, Word/docx drafts, or Zotero/InstSci-supported literature evidence, especially for 大论文, 小论文, SCI投稿稿, 章节正文, 试验研究, 有限元分析, 机器学习模型, 模型应用, 科研图表, and OOXML-safe revision.
 ---
 
 # Civil Thesis Body Writing
 
 Shared writing rules for Codex, Claude Code, and WorkBuddy. Load only needed routes. On non-Codex hosts, read `references/workflows/agent-compatibility.md`; skip unavailable tool operations rather than simulate them.
+
+Thesis-to-journal conversion is not supported: do not extract/compress/reorganize a thesis into an article through any mode. State the boundary briefly. Independent journal writing/polishing, faithful translation and file-format conversion remain available without changing genre.
 
 ## Mandatory Router
 
@@ -70,7 +72,7 @@ If the section, evidence, and intended claim are clear, proceed directly.
 | User request | Primary route |
 |---|---|
 | Write or expand a thesis subsection | `mode: thesis-body`, matching `section`, `operation: draft` |
-| Rewrite thesis content into a paper/SCI section | `mode: paper-sci`, matching `section`, `operation: revise` |
+| Draft or revise an independent journal/SCI manuscript | `mode: paper-sci`, matching `section`, `operation: draft` or `revise`; not thesis conversion |
 | Polish for a named target journal | `mode: target-journal-polish`, `source: external-search` or `local-style-corpus` |
 | Add or reduce citations | `mode: citation-support`, `operation: cite` |
 | Revise body text to address a reviewer comment | Existing paper/thesis mode + `revise`; load `references/workflows/reviewer-driven-revision.md` |

@@ -12,7 +12,7 @@ Build or refresh a terminology ledger when:
 - the manuscript is bilingual or being translated;
 - symbols such as `DCA_s`, `DCA_c`, `R2`, `RMSE`, `MAE`, or formula variables appear;
 - the text mixes thesis language, journal language, GUI labels, code variable names, and figure/table captions;
-- the user asks for formal Word/docx revision, target-journal polish, or thesis-to-paper conversion.
+- the user asks for formal Word/docx revision or target-journal polish.
 
 For a short local polish, silently preserve existing terms unless a term is clearly wrong.
 

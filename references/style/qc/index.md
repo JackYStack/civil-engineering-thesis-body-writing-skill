@@ -31,7 +31,7 @@ For formal thesis or paper review:
 - Prefer user evidence first: figures, tables, equations, datasets, scripts, model outputs, Word comments, existing references, and Zotero full text.
 - Treat external retrieval status as access evidence, not claim support. A downloaded or found paper still needs sentence-level relevance checking.
 - Technical prose can be smooth only after it is specific. If a sentence cannot answer "相对谁、哪个指标、什么证据、何种机理、适用到哪里", revise it or flag it.
-- Keep thesis writing complete and traceable; keep SCI writing compressed and contribution-centered. Do not mix the two styles without an explicit thesis-to-paper task.
+- Keep thesis writing complete and traceable; keep independent journal writing focused and contribution-centered. Do not change a thesis into a journal manuscript; that conversion is outside scope.
 
 ## When Not To Load All QC Files
 

@@ -1,6 +1,6 @@
 # Nature-Writing Adapted SCI Workflow for Civil Engineering Manuscripts
 
-Use this reference when the user asks for `SCI投稿稿`, `英文投稿稿`, `SCI小论文`, `整篇SCI润色`, `thesis-to-paper`, or high-level English manuscript rebuilding, especially when they explicitly ask to refer to `nature-writing`.
+Use this reference for independent journal/SCI drafting or polishing, especially when the user explicitly asks to refer to `nature-writing`. It does not support conversion of a thesis/chapter into an article.
 
 This file adapts the structure of `nature-writing` to civil-engineering papers. It does not turn the manuscript into Nature-style hype. The default target remains engineering-journal clarity, bounded claims, and evidence-first argument.
 

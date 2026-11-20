@@ -7,7 +7,7 @@ This is a compatibility entry for the split local paper/SCI style guides. Use it
 Use this branch when the user asks for:
 
 - small-paper or SCI manuscript drafting, compression, or polishing;
-- thesis-to-paper adaptation;
+- independent journal-manuscript revision;
 - abstract, introduction, Results and Discussion, conclusion, title, highlights, or contribution rewriting;
 - target-journal style alignment when the target is an engineering journal family;
 - Chinese technical-paper style checks before English translation or journal polishing.
@@ -21,7 +21,7 @@ Do not use this branch as the default for Chinese master's thesis body writing. 
 | [paper-style/index.md](paper-style/index.md) | Choosing which local paper/SCI style guide to load. |
 | [paper-style/abstract-intro.md](paper-style/abstract-intro.md) | Writing or auditing abstracts, introductions, contribution framing, and research-gap compression. |
 | [paper-style/results-discussion.md](paper-style/results-discussion.md) | Writing methods rationale, results, discussion, figure/table interpretation, and evidence chains. |
-| [paper-style/conclusion-title.md](paper-style/conclusion-title.md) | Writing conclusions, titles, highlights, contribution statements, and thesis-to-paper adaptation notes. |
+| [paper-style/conclusion-title.md](paper-style/conclusion-title.md) | Writing independent journal conclusions, titles, highlights and contribution statements. |
 | [paper-style/sci-phrase-guardrails.md](paper-style/sci-phrase-guardrails.md) | Checking reviewer-facing boundaries, forbidden overclaims, and local paper style quality. |
 
 ## Core Rule

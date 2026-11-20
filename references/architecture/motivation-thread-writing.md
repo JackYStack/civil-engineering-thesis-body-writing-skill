@@ -1,6 +1,6 @@
 # Motivation Thread Writing for Civil Engineering Thesis and Papers
 
-Use this reference when a thesis section, paper manuscript, abstract, introduction, conclusion, thesis-to-paper task, or formal Word revision needs a clear writing spine before prose polishing.
+Use this reference when a thesis section, independent paper manuscript, abstract, introduction, conclusion, or formal Word revision needs a clear writing spine before prose polishing.
 
 ## Core Purpose
 
@@ -8,7 +8,7 @@ The motivation thread is the controlling line of the section or manuscript. It a
 
 `why this section/paper is needed -> what exact problem is unresolved -> what this study does -> what evidence proves it -> where the claim stops`.
 
-For introductions, literature reviews, Results and Discussion, and thesis-to-paper/SCI manuscripts, the motivation thread should usually begin from a puzzle or contradiction, not only from a missing-topic gap. When the logic is weak or list-like, use [phenomenon-mechanism-condition-framework.md](phenomenon-mechanism-condition-framework.md) to convert the section into:
+For introductions, literature reviews, Results and Discussion, and independent journal manuscripts, the motivation thread should usually begin from a puzzle or contradiction, not only from a missing-topic gap. When the logic is weak or list-like, use [phenomenon-mechanism-condition-framework.md](phenomenon-mechanism-condition-framework.md) to structure the section as:
 
 `observed phenomenon or puzzle -> governing mechanism -> changing condition -> research question -> evidence route -> bounded implication`.
 
@@ -22,7 +22,7 @@ This mechanism is not required for a short sentence polish. It is required when 
 
 - 摘要, 引言, 结论, 绪论, 国内外研究现状;
 - one full section, one full chapter, or a whole manuscript revision;
-- thesis-to-paper, SCI manuscript, English submission draft, or Results and Discussion;
+- independent journal manuscript, English submission draft, or Results and Discussion;
 - a Word/docx formal revision where logic must be preserved;
 - a section criticized as `逻辑不清`, `主线不突出`, `创新点不集中`, or `像材料堆砌`.
 

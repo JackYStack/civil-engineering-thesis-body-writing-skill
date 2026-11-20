@@ -17,7 +17,7 @@ The purpose is to prevent the skill from mixing thesis prose, SCI rewriting, cit
 | Mode ID | Use When | Required Inputs | Required Guides | Blocking Checks |
 |---|---|---|---|---|
 | `thesis-body` | Writing or revising Chinese master's thesis body sections. | section type, research object, method, variables, evidence, boundary | `chapter-templates`, `local-thesis-style`, `style-and-qc`, `anti-vague-language` | missing figure/table/data anchors; unsupported design conclusion |
-| `paper-sci` | Drafting, compressing, or rebuilding small-paper/SCI sections. | central question, claim, evidence, variables, target language, boundary | `sci-writing-principles`, `nature-writing-adapted-sci-workflow`, `reader-question-sequence`, `terminology-ledger` | thesis-like multi-task structure; unbounded novelty claim |
+| `paper-sci` | Drafting or revising independent journal/SCI manuscripts, not converting a thesis. | author-defined journal question, claim, evidence, variables, target language, boundary | `sci-writing-principles`, `nature-writing-adapted-sci-workflow`, `reader-question-sequence`, `terminology-ledger` | thesis conversion request; unbounded novelty claim |
 | `target-journal-polish` | Matching a manuscript to a named journal or journal family. | target journal, article type, manuscript, exemplar access | `target-journal-polish-workflow`, `external-source-and-tool-use`, `output-contracts` | no target journal; no permission/access path for exemplars |
 | `citation-support` | Adding, reducing, verifying, or replacing citations. | claim list or draft paragraph, local references, Zotero/library status | `citation-workflow`, `external-source-and-tool-use`, `pdf-extraction-and-fulltext-qc` | citation supports only title similarity; full text not checked for claim-level support |
 | `docx-revision` | Creating, converting, formatting, or revising a Word `.docx` manuscript. | selected `create/convert/revise` branch, input/source path, formatting authority, scope, rich-object requirements | `docx-creation-and-formatting`, `docx-ooxml-editing`, `writing-rationale-matrix`, `terminology-ledger` | generic defaults presented as institutional compliance; original overwritten; formulas/fields/tables changed without object-level inspection |
@@ -27,6 +27,8 @@ The purpose is to prevent the skill from mixing thesis prose, SCI rewriting, cit
 | `figure-support` | Planning, revising, auditing, or generating a thesis/journal figure tied to manuscript claims. | core conclusion, section role, data/source files, variables/units, panel needs, target output, journal/template | `nature-figure-cooperation`, `scientific-figure-color`, then `nature-figure` for execution | plotting starts before the evidence brief; mock data substitutes manuscript evidence; backend gate is bypassed; artifacts or QA are claimed without files |
 
 ## Mode Mixing Rules
+
+- Thesis-to-journal conversion is outside scope. Do not route it through `paper-sci`, target-journal polishing, translation or DOCX operations. Explain the boundary without generating an extraction plan or converted abstract; a supported independent task must be separately specified.
 
 - `docx-revision` may call `thesis-body`, `paper-sci`, or `translation-logic` for manuscript text, but it controls the `create/convert/revise` branch, formatting contract, file safety, and Word-object validation.
 - `citation-support` may precede any writing mode, but it should not replace the user's own result evidence.

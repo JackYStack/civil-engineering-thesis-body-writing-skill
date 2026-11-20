@@ -26,12 +26,12 @@ Expected output:
 - `写作依据`：列明图表、公式、数据和参考文献如何支撑正文。
 - `需补充或确认`：缺少数值、图表编号、参数范围或支撑文献时列出。
 
-## 2. 小论文/SCI 摘要重写
+## 2. 独立期刊稿件/SCI 摘要修订
 
 User prompt template:
 
 ```md
-使用 civil-thesis-body-writing，按 SCI 工程期刊风格重写摘要。
+使用 civil-thesis-body-writing，修改独立工程期刊稿件的摘要，不改变文稿类型。
 
 题目：
 研究对象：

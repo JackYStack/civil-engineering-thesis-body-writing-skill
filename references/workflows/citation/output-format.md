@@ -14,7 +14,7 @@ Use this guide when inserting citation markers, building a support bank, or retu
 
 ## Support Bank Scale
 
-Build a candidate support bank before insertion for substantial introduction, research-status, discussion, thesis-to-paper, or SCI tasks.
+Build a candidate support bank before insertion for substantial introduction, research-status, discussion, or independent journal tasks.
 
 Recommended scale:
 

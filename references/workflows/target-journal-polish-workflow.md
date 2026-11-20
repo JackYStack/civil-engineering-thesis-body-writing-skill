@@ -4,6 +4,8 @@ Use this reference when the user asks for target-journal polishing, SCI submissi
 
 This is a branch workflow. Do not run it for ordinary thesis-section writing or short paragraph polishing.
 
+This branch applies to independent journal manuscripts only. Do not use it to extract, compress or reorganize a thesis/chapter into an article; that capability has been removed. A change of target journal for an existing journal manuscript is not a thesis conversion.
+
 ## Trigger Phrases
 
 Activate this workflow when the user asks for:

@@ -36,6 +36,8 @@ Add when needed:
 
 ### `paper-sci`
 
+Independent journal work only. Thesis/chapter conversion is outside scope; do not generate the converted text or an extraction blueprint through this contract or an auxiliary mode.
+
 Required:
 
 1. `论证架构`

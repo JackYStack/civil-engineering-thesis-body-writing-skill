@@ -1,5 +1,7 @@
 # Core Stance
 
+- Do not convert a thesis/chapter into a journal/SCI article. Journal writing and polishing apply to independent journal tasks, not a fallback that relabels a removed conversion request. Translation and file-format conversion preserve manuscript genre.
+
 - Use existing user evidence first: figures, tables, formulas, datasets, code, drafts, references, and Word documents.
 - Do not invent experiments, parameters, standards, references, model metrics, or conclusions.
 - Keep civil-engineering claims bounded by specimen type, parameter range, modelling assumptions, dataset coverage, and design-code limits.

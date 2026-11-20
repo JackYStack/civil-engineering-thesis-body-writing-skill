@@ -1,6 +1,6 @@
 # Conclusion, Title, And Contribution Style
 
-Use this guide for paper conclusions, titles, highlights, contribution statements, and thesis-to-paper adaptation.
+Use this guide for independent journal-paper conclusions, titles, highlights and contribution statements.
 
 ## Conclusion Pattern
 
@@ -43,18 +43,6 @@ Highlights should be even more specific:
 - one for the boundary or application path when needed.
 
 Do not repeat the same claim with different wording across all highlights.
-
-## Thesis-To-Paper Adaptation
-
-When compressing a thesis chapter into a paper:
-
-1. Select one central question.
-2. Keep only the experiments, simulations, formulas, or ML results that answer that question.
-3. Move general theory, lengthy software operations, and broad background out of the main paper unless they are necessary for reproducibility.
-4. Convert chapter summaries into result-driven conclusions.
-5. Replace thesis-style "research contents" with paper-style "contribution and evidence".
-
-The paper should not try to preserve every thesis subsection. It should preserve the strongest argument chain.
 
 ## Chinese Technical-Paper Style
 

@@ -1,6 +1,6 @@
 ﻿# SCI Writing Principles for Civil-Engineering Papers
 
-Use this reference when the user asks for `小论文`, `SCI投稿稿`, `英文投稿稿`, `英文摘要`, `引言`, `Results and Discussion`, `Discussion`, `Conclusion`, `thesis-to-paper`, or `中译英逻辑校核`.
+Use this reference for independent journal/SCI manuscripts, English abstracts, introductions, Results and Discussion, conclusions, or bilingual logic checks. It does not support converting a thesis/chapter into a journal article.
 
 Do not use this file as a general phrasebank. Its purpose is to make the manuscript argument clear before wording is polished.
 

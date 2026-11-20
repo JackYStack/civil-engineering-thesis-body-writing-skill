@@ -1,6 +1,6 @@
 # Local Paper Style Index
 
-Use this index for small-paper, SCI, target-journal, or thesis-to-paper work. The rules are distilled from local civil-engineering paper writing patterns and SCI writing materials, but they intentionally keep only generalized writing logic. Do not copy sample-paper facts, paper titles, author names, DOI strings, local paths, or specific conclusions into output.
+Use this index for independent journal/SCI manuscript writing and target-journal polish, not thesis conversion. The rules retain generalized writing logic from civil-engineering papers. Do not copy sample-paper facts, titles, author names, DOI strings, local paths or specific conclusions into output.
 
 ## File Map
 
@@ -8,7 +8,7 @@ Use this index for small-paper, SCI, target-journal, or thesis-to-paper work. Th
 |---|---|---|
 | [abstract-intro.md](abstract-intro.md) | Abstract, introduction, contribution framing, and gap compression. | Turning the paper into a broad field review. |
 | [results-discussion.md](results-discussion.md) | Methods rationale, result paragraphs, discussion, and figure/table interpretation. | Reporting tables without explaining the engineering meaning. |
-| [conclusion-title.md](conclusion-title.md) | Conclusion, title, highlights, and thesis-to-paper adaptation. | Repeating the abstract or overstating design applicability. |
+| [conclusion-title.md](conclusion-title.md) | Independent journal conclusions, titles and highlights. | Repeating the abstract or overstating design applicability. |
 | [sci-phrase-guardrails.md](sci-phrase-guardrails.md) | Reviewer-facing language, overclaim checks, phrase discipline, and final QC. | Fluent but vague or unsupported journal prose. |
 
 ## Mode Routing

@@ -103,4 +103,4 @@ When the user says the revision is not what they want, do not rewrite the whole 
 3. Rewrite only the affected claim, paragraph, or section handoff.
 4. Report the changed rationale in one or two sentences.
 
-This loop is especially important for Word/docx editing, advisor-feedback rounds, and thesis-to-SCI conversion, where unrelated rewrites can damage already-approved text.
+This loop is especially important for Word/docx editing and advisor-feedback rounds, where unrelated rewrites can damage already-approved text.
